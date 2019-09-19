@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0b9b52"/>
+      <stop offset="1" stop-color="#12aa5d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(0 -5)">
+    <rect id="Rectangle_Copy_8" data-name="Rectangle Copy 8" width="60" height="60" rx="8" transform="translate(0 5)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle" width="30" height="17" rx="5" transform="translate(15 20)" fill="#fff" opacity="0.683"/>
+    <rect id="Rectangle-2" data-name="Rectangle" width="36" height="21" rx="5" transform="translate(12 22)" fill="#fff" opacity="0.683"/>
+    <rect id="Rectangle-3" data-name="Rectangle" width="40" height="23" rx="5" transform="translate(10 24)" fill="#fff"/>
+    <path id="Line_2" data-name="Line 2" d="M.5.5h31" transform="translate(14 36.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" opacity="0.2"/>
+    <circle id="Oval" cx="3.5" cy="3.5" r="3.5" transform="translate(13 26)" fill="#606060" opacity="0.2"/>
+    <path id="Combined_Shape" data-name="Combined Shape" d="M5,11V8.5H2a2,2,0,0,1,0-4H5V2A2,2,0,1,1,9,2V4.5h3a2,2,0,1,1,0,4H9V11a2,2,0,0,1-4,0Z" transform="translate(34 41)" fill="#fbc234"/>
+  </g>
+</svg>

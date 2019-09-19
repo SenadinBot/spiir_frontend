@@ -1,0 +1,95 @@
+// colors named using http://chir.ag/projects/name-that-color
+$white: #ffffff;
+$dark: #000000;
+
+// Fonts
+$camptonBookItalic: "Campton Book Italic";
+$camptonBold: "Campton Bold";
+$camptonBook: "Campton Book";
+$camptonExtraLight: "Campton Extra Light";
+$camptonLight: "Campton Light";
+$camptonMedium: "Campton Medium";
+$camptonSemiBold: "Campton Semi Bold";
+$camptonSemiBoldItalic: "Campton Semi Bold Italic";
+
+
+// Media Queries
+// Extra Small Devices, Mobile .visible-xs-*
+@mixin media-xs {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin media-xs-portrait {
+    @media (max-width: 767px) and (orientation: portrait) {
+        @content;
+    }
+}
+@mixin media-xs-landscape {
+  @media (max-width: 767px) and (orientation: landscape) {
+        @content;
+  }
+}
+// Small Devices, Tablet portrait .visible-sm-* 
+@mixin media-sm {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+// Medium Devices, Tablet landscape .visible-md-*
+@mixin media-md {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+// Large Devices, Desktop .visible-lg-* 
+@mixin media-lmd {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+// Large Devices, Desktop .visible-lg-* 
+@mixin media-lg {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+// Extra Large Devices, Desktop .visible-lg-* 
+@mixin media-xlg {
+    @media (min-width: 1450px) {
+        @content;
+    }
+}
+.hidden-xs {
+    @include media-xs() {
+        display: none !important;
+    }
+}
+.hidden-sm {
+    @include media-sm() {
+        display: none !important;
+    }
+}
+.hidden-md {
+    @include media-md() {
+        display: none !important;
+    }
+}
+.hidden-lg {
+    @include media-lg() {
+        display: none !important;
+    }
+}
+.visible-xs {
+    display: none !important;
+    @include media-xs() {
+        display: block !important;
+    }
+}
+.container {
+    &.custom-container {
+      @include media-lg() {
+            max-width: 1400px;
+      }
+    }
+}
