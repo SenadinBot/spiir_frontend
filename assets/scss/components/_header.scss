@@ -1,0 +1,325 @@
+body {
+    main {
+        @include media-sm {
+            margin-top: 90px;
+        }
+        @include media-xs {
+            margin-top: 78px;
+        }
+    }
+    overflow-x: hidden;
+    &.menu-open {   
+        overflow-y: hidden;    
+        header {
+            .nav-icon {
+                background: transparent;
+                transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                &:before {
+                    opacity: 0;
+                    bottom: 0;
+                    transform: rotate(-45deg);
+                    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                &:after {
+                    opacity: 0;
+                    top: 0;
+                    transform: rotate(45deg);
+                    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+                }
+            }
+            @include media-sm {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100vh;
+                    background-color: rgba(255, 255, 255, 0.98);                    
+                    width: 5px
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100vh;
+                    background-color: rgba(255, 255, 255, 0.98);
+                    width: 5px
+                }
+            }
+        }
+        nav {
+            margin-left: 0%;
+            @include media-sm {
+                width: 100%;
+            }
+        }
+        footer {
+            margin-left: 100%;
+            @include media-xs {
+                float: left;
+                overflow: hidden;
+                height: 0;
+            }
+            @include media-sm {
+                float: left;
+                overflow: hidden;
+                height: 0;
+            }
+        }
+    }
+}
+header {
+    background-color: $mainGreen;
+    z-index: 99;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.13);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @include media-xs {
+        height: 78px;
+    }
+    .nav-icon-container {
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        width: 24px;
+        height: 24px;
+    }
+    .nav-icon {
+        width: 24px;
+        height: 2.5px;
+        position: absolute;
+        top: -4px;
+        right: 0px;
+        transform: translateY(16px);
+        background: #6D645D;
+        transition: all 0ms 300ms;
+        &:before {
+            width: 24px;
+            height: 2.5px;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 9px;
+            background: #6D645D;
+            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        &:after {
+            width: 24px;
+            height: 2.5px;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            background: #6D645D;
+            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }        
+    }
+    .logo-container {
+        float: left;
+        text-align: left;
+        width: 83px;
+        height: 39px;
+        position: absolute;
+        top: 23.5px;
+        left: 15px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        a {
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            position: relative;
+        }
+        .logo {
+            height: auto;
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+        img {
+            width: 83px;
+            height: 39px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            position: relative;
+        }
+    }
+    nav {
+        text-align: right;
+        position: relative;
+        margin: 0;
+        background: none;
+        display: inline-block;
+        float: right;
+        transition: margin-left 1s ease;
+        -webkit-transition: margin-left 1s ease; 
+        @include media-xs {
+            margin-left: -100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+        @include media-xs-landscape {
+            padding-bottom: 320px;
+        }
+        @include media-sm {
+            margin-left: -100%;
+            width: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+        ul {
+            padding: 0;
+            text-align: right;
+            list-style: none;
+            width: auto;
+            display: block;
+            margin-bottom: 0;
+            @include media-xs {
+                margin-left: 0;
+                margin-top: 80px;
+            }
+            @include media-sm {
+                margin-left: 0;
+                margin-top: 80px;
+            }
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-bottom: 0;
+                background: none;
+                cursor: pointer;
+                padding: 0 42px 0 0;
+                position: relative;
+                @include media-xs {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
+                    margin-bottom: 28px;
+                }
+                @include media-md {
+                    padding-right: 20px;
+                }
+                @include media-sm {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
+                    margin-bottom: 28px;
+                }
+                &:last-child {
+                    padding-right: 0;
+                    @include media-xs {
+                        margin-bottom: 0;
+                    }
+                    @include media-sm {
+                        margin-bottom: 0;
+                    }
+                }
+                &.active {
+                    a {
+                        color: $white;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            -moz-transform: scaleX(1);
+                            -ms-transform: scaleX(1);
+                            -o-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+                a {
+                    position: relative;
+                    padding: 0;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #C2E8D5;
+                    font-family: $camptonSemiBold;
+                    letter-spacing: 0.02em;
+                    padding: 33px 0 31px 0;
+                    display: block;
+                    @include media-xs {
+                        font-size: 19px;
+                        letter-spacing: 0;
+                        line-height: 26px;
+                        display: inline-block;
+                    }
+                    @include media-sm {
+                        font-size: 19px;
+                        letter-spacing: 0;
+                        line-height: 26px;
+                        display: inline-block;
+                    }
+                    &:hover {
+                        color: $white;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            -moz-transform: scaleX(1);
+                            -ms-transform: scaleX(1);
+                            -o-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        visibility: hidden;
+                        -webkit-transform: scaleX(0);
+                        -moz-transform: scaleX(0);
+                        -ms-transform: scaleX(0);
+                        -o-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        -moz-transition: all 0.3s ease-in-out 0s;
+                        -ms-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                        background: #ffffff;
+                    }
+                    &:focus {
+                        text-decoration: none;
+                        outline: none;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            -moz-transform: scaleX(1);
+                            -ms-transform: scaleX(1);
+                            -o-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
