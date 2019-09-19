@@ -1,14 +1,14 @@
 // Campton Book Italic
 @font-face {
     font-family: 'Campton Book Italic';
-    src: url('../fonts/campton-book-italic/Campton-Regular.eot');
-    src: url('../fonts/campton-book-italic/Campton-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/campton-book-italic/Campton-Regular.woff2') format('woff2'),
-        url('../fonts/campton-book-italic/Campton-Regular.woff') format('woff'),
-        url('../fonts/campton-book-italic/Campton-Regular.ttf') format('truetype'),
-        url('../fonts/campton-book-italic/Campton-Regular.svg#Campton-Regular') format('svg');
+    src: url('../fonts/campton-book-italic/Campton-BookItalic.eot');
+    src: url('../fonts/campton-book-italic/Campton-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/campton-book-italic/Campton-BookItalic.woff2') format('woff2'),
+        url('../fonts/campton-book-italic/Campton-BookItalic.woff') format('woff'),
+        url('../fonts/campton-book-italic/Campton-BookItalic.ttf') format('truetype'),
+        url('../fonts/campton-book-italic/Campton-BookItalic.svg#Campton-BookItalic') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 // Campton Bold
@@ -20,7 +20,7 @@
         url('../fonts/campton-bold/Campton-Bold.woff') format('woff'),
         url('../fonts/campton-bold/Campton-Bold.ttf') format('truetype'),
         url('../fonts/campton-bold/Campton-Bold.svg#Campton-Bold') format('svg');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -46,7 +46,7 @@
         url('../fonts/campton-extra-light/Campton-ExtraLight.woff') format('woff'),
         url('../fonts/campton-extra-light/Campton-ExtraLight.ttf') format('truetype'),
         url('../fonts/campton-extra-light/Campton-ExtraLight.svg#Campton-ExtraLight') format('svg');
-    font-weight: normal;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -59,7 +59,7 @@
         url('../fonts/campton-light/Campton-Light.woff') format('woff'),
         url('../fonts/campton-light/Campton-Light.ttf') format('truetype'),
         url('../fonts/campton-light/Campton-Light.svg#Campton-Light') format('svg');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -72,7 +72,7 @@
         url('../fonts/campton-medium/Campton-Medium.woff') format('woff'),
         url('../fonts/campton-medium/Campton-Medium.ttf') format('truetype'),
         url('../fonts/campton-medium/Campton-Medium.svg#Campton-Medium') format('svg');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -85,7 +85,7 @@
         url('../fonts/campton-semi-bold/Campton-SemiBold.woff') format('woff'),
         url('../fonts/campton-semi-bold/Campton-SemiBold.ttf') format('truetype'),
         url('../fonts/campton-semi-bold/Campton-SemiBold.svg#Campton-SemiBold') format('svg');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -98,6 +98,6 @@
         url('../fonts/campton-semi-bold-italic/Campton-SemiBoldItalic.woff') format('woff'),
         url('../fonts/campton-semi-bold-italic/Campton-SemiBoldItalic.ttf') format('truetype'),
         url('../fonts/campton-semi-bold-italic/Campton-SemiBoldItalic.svg#Campton-SemiBoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 600;
+    font-style: italic;
 }
