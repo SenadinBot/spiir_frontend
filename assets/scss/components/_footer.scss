@@ -1,0 +1,22 @@
+footer {
+    .download-container {
+        margin-top: 25px;
+        a {
+            &:before {
+                height: 40px;
+            }
+            &.ios-icon {
+                &:before {
+                    width: 123px;
+                    background: url("/assets/images/icons/footer-ios.svg");
+                }
+            }
+            &.android-icon {
+                &:before {
+                    width: 135px;
+                    background: url("/assets/images/icons/footer-android.svg");
+                }
+            }
+        }
+    }
+}

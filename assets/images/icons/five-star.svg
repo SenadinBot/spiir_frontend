@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="313" height="36.18" viewBox="0 0 313 36.18">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fecc00"/>
+      <stop offset="1" stop-color="#fdb000"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-562 -181)">
+    <g id="Group" transform="translate(616 181)">
+      <path id="Star_2" data-name="Star 2" d="M20,28.2,8.244,36.18,12.2,22.534.979,13.82l14.2-.454L20,0l4.82,13.365,14.2.454L27.8,22.534,31.756,36.18Z" fill="url(#linear-gradient)"/>
+      <path id="Star_2-2" data-name="Star 2" d="M20,28.2,8.244,36.18,12.2,22.534.979,13.82l14.2-.454L20,0l4.82,13.365,14.2.454L27.8,22.534,31.756,36.18Z" transform="translate(40)" fill="url(#linear-gradient)"/>
+      <path id="Star_2-3" data-name="Star 2" d="M20,28.2,8.244,36.18,12.2,22.534.979,13.82l14.2-.454L20,0l4.82,13.365,14.2.454L27.8,22.534,31.756,36.18Z" transform="translate(83)" fill="url(#linear-gradient)"/>
+      <path id="Star_2-4" data-name="Star 2" d="M20,28.2,8.244,36.18,12.2,22.534.979,13.82l14.2-.454L20,0l4.82,13.365,14.2.454L27.8,22.534,31.756,36.18Z" transform="translate(127)" fill="url(#linear-gradient)"/>
+      <path id="Star_2-5" data-name="Star 2" d="M20,28.2,8.244,36.18,12.2,22.534.979,13.82l14.2-.454L20,0l4.82,13.365,14.2.454L27.8,22.534,31.756,36.18Z" transform="translate(171)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Rectangle" d="M0,0H23l3,4H3Z" transform="translate(562 200)" fill="url(#linear-gradient)"/>
+    <path id="Rectangle_Copy_9" data-name="Rectangle Copy 9" d="M3,0H26L23,4H0Z" transform="translate(849 200)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

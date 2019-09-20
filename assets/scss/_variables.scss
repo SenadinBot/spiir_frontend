@@ -3,6 +3,7 @@ $white: #ffffff;
 $dark: #000000;
 $mainGreen: #0B9B52;
 $mainGray: #EEF5F0;
+$darkGray: #505050;
 
 // Fonts
 $camptonBookItalic: "Campton Book Italic";
@@ -89,9 +90,7 @@ $camptonSemiBoldItalic: "Campton Semi Bold Italic";
     }
 }
 .container {
-    &.custom-container {
-      @include media-lg() {
-            max-width: 1400px;
-      }
-    }
+    @include media-lg() {
+        max-width: 990px;
+  }
 }

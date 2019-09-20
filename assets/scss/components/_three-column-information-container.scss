@@ -1,0 +1,29 @@
+.three-column-information-container {
+    padding: 70px 0 76px 0;
+    display: flex;
+    .column-information-item {
+        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1 1 0%;
+        width: auto;
+        span {
+            font-family: $camptonSemiBold;
+            color: $darkGray;
+            font-size: 22px;
+            line-height: 27px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        p {
+            line-height: 19px;
+            padding: 0 5px;
+            margin: 0;
+        }
+        .img-container {
+            margin-bottom: 27px;
+        }
+    }
+}
