@@ -131,33 +131,69 @@ a {
         flex-direction: initial; } }
 
 .primary-btn {
-  background-color: transparent;
+  background-color: #12AA5D;
+  border: 2px solid #12AA5D;
   color: #ffffff;
-  font-size: 30px;
-  line-height: 30px;
-  padding: 12px 52px 14px 52px;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 8px 19px 7px 17px;
   text-align: center;
-  border-radius: 0;
-  letter-spacing: 1.8px;
+  border-radius: 16px;
+  letter-spacing: 0.02em;
   position: relative;
   z-index: 1;
-  border: 2px solid #ffffff;
   display: inline-block;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  text-transform: uppercase; }
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-family: "Campton Book";
+  text-transform: initial;
+  margin-top: 5px; }
   .primary-btn:hover {
     text-decoration: none;
     outline: 0;
-    background-color: #ffffff; }
+    color: #12AA5D;
+    background: #ffffff; }
   .primary-btn:focus {
     text-decoration: none;
-    outline: 0; }
+    outline: 0;
+    color: #12AA5D; }
   .primary-btn:active {
     outline: 0; }
+  .primary-btn:after {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/icons/light-green-right-icon.svg");
+    width: 8px;
+    height: 12px;
+    position: relative;
+    top: 1px;
+    margin-left: 18px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .primary-btn.orange-btn {
+    background-color: #FBC234;
+    border-color: #FBC234; }
+    .primary-btn.orange-btn:hover {
+      background: #ffffff;
+      color: #FBC234; }
+      .primary-btn.orange-btn:hover:after {
+        background-image: url("/assets/images/icons/hover-light-orange-right-icon.svg"); }
+    .primary-btn.orange-btn:focus {
+      background: #ffffff;
+      color: #FBC234; }
+      .primary-btn.orange-btn:focus:after {
+        background-image: url("/assets/images/icons/hover-light-orange-right-icon.svg"); }
+    .primary-btn.orange-btn:after {
+      background-image: url("/assets/images/icons/light-orange-right-icon.svg"); }
+  .primary-btn.no-icon:after {
+    display: none; }
 
 @media (max-width: 768px) {
   .container {
@@ -171,6 +207,16 @@ a {
 
 .top-spacing {
   padding-top: 80px; }
+
+.add-spacing {
+  padding-top: 80px;
+  padding-bottom: 100px; }
+
+.half-width {
+  width: 50%; }
+  @media (max-width: 767px) {
+    .half-width {
+      width: 100%; } }
 
 @font-face {
   font-family: 'Campton Book Italic';
@@ -191,7 +237,7 @@ a {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Campton ExtraLight';
+  font-family: 'Campton Extra Light';
   src: url("../fonts/campton-/Campton-ExtraLight.eot");
   src: url("../fonts/campton-extra-light/Campton-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/campton-extra-light/Campton-ExtraLight.woff2") format("woff2"), url("../fonts/campton-extra-light/Campton-ExtraLight.woff") format("woff"), url("../fonts/campton-extra-light/Campton-ExtraLight.ttf") format("truetype"), url("../fonts/campton-extra-light/Campton-ExtraLight.svg#Campton-ExtraLight") format("svg");
   font-weight: 200;
@@ -313,6 +359,10 @@ header {
     top: -4px;
     right: 0px;
     transform: translateY(16px);
+    -webkit-transform: translateY(16px);
+    -moz-transform: translateY(16px);
+    -ms-transform: translateY(16px);
+    -o-transform: translateY(16px);
     background: #6D645D;
     transition: all 0ms 300ms; }
     header .nav-icon:before {
@@ -735,6 +785,9 @@ footer {
   position: relative;
   margin: 0;
   padding: 80px 0 120px 0; }
+  @media all and (-ms-high-contrast: none) {
+    .jarallax-container {
+      overflow: hidden; } }
   .jarallax-container .jarallax {
     height: 100%;
     position: absolute;
@@ -747,6 +800,19 @@ footer {
       .jarallax-container .jarallax {
         position: relative;
         height: auto; } }
+    .jarallax-container .jarallax .jarallax-img {
+      object-position: right !important; }
+      @media all and (-ms-high-contrast: none) {
+        .jarallax-container .jarallax .jarallax-img {
+          object-position: 50% 50% !important;
+          background-position-x: right !important;
+          right: 0;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 100% 50%;
+          width: 100% !important; } }
+  .jarallax-container.green-container {
+    padding: 80px 0 80px 0; }
 
 .download-container {
   margin-top: 50px; }
@@ -855,6 +921,182 @@ footer {
     max-width: 100%;
     max-height: 100%; }
 
+.accordion-container {
+  background: #fff;
+  border: 1px solid #e4ebe6;
+  border-radius: 8px; }
+  .accordion-container .card {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #E4EBE6;
+    background: transparent; }
+    .accordion-container .card:last-child {
+      border-bottom: none; }
+    .accordion-container .card .card-header {
+      background: transparent;
+      border-radius: 0;
+      border: none;
+      padding: 15px 15px 15px 82px; }
+      .accordion-container .card .card-header button {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        font-family: "Campton Semi Bold";
+        font-size: 18px;
+        line-height: 18px;
+        color: #505050;
+        position: relative; }
+        .accordion-container .card .card-header button:focus {
+          outline: none;
+          box-shadow: none; }
+        .accordion-container .card .card-header button:hover:after {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1); }
+        .accordion-container .card .card-header button:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -5px;
+          left: 0;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          -moz-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          -o-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+          background: #505050; }
+      .accordion-container .card .card-header [data-toggle="collapse"].accordion-icon:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -59px;
+        width: 15px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("/assets/images/icons/green-up.svg"); }
+      .accordion-container .card .card-header [data-toggle="collapse"].collapsed.accordion-icon:before {
+        content: "";
+        background-image: url("/assets/images/icons/green-down.svg"); }
+    .accordion-container .card .card-body {
+      padding: 0 30px 25px 82px; }
+      .accordion-container .card .card-body p {
+        margin-bottom: 25px; }
+
+.green-container h5 {
+  color: #FBC234; }
+.green-container h2 {
+  color: #ffffff; }
+.green-container p {
+  color: #C2E8D5; }
+
+.num-counter-container {
+  display: flex;
+  padding: 36px 0 50px 0;
+  width: 100%; }
+  .num-counter-container .num-counter-item {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 0%;
+    width: auto;
+    position: relative; }
+    .num-counter-container .num-counter-item span {
+      display: block; }
+      .num-counter-container .num-counter-item span.num {
+        text-transform: uppercase;
+        color: #12AA5D;
+        font-family: "Campton Light";
+        font-size: 72px;
+        line-height: 86px;
+        min-height: 86px; }
+      .num-counter-container .num-counter-item span.text {
+        font-family: "Campton Book";
+        font-size: 16px;
+        line-height: 19px;
+        color: #505050; }
+    .num-counter-container .num-counter-item:nth-child(1) span.num:after {
+      content: "K";
+      display: inline-block; }
+    .num-counter-container .num-counter-item:nth-child(2) span.num:after {
+      content: "+";
+      display: inline-block; }
+    .num-counter-container .num-counter-item:after {
+      content: "";
+      background: #D8D8D8;
+      width: 1px;
+      height: 112px;
+      display: inline-block;
+      position: absolute;
+      top: 3px;
+      right: -5px; }
+    .num-counter-container .num-counter-item:last-child:after {
+      display: none; }
+
+.wrapper {
+  max-width: 500px; }
+
+.nav {
+  display: flex;
+  margin: 15px 0;
+  padding: 0; }
+
+.nav li {
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 80px;
+  margin: 3px;
+  padding: 5px 0;
+  list-style: none;
+  cursor: pointer;
+  transition: all .5s;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #009485; }
+
+.nav li:hover {
+  background-color: #00b3a1; }
+
+.nav strong {
+  width: 120px; }
+
+[class^='box-'],
+[class*='box-'] {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  box-shadow: 0 0 0 2px #f1f1f1 inset; }
+
+.box-green {
+  background: green; }
+
+.box-orange {
+  background: orange; }
+
+.box-purple {
+  background: purple; }
+
 .home-notifications-container {
   background: linear-gradient(#0b9b52 0%, #12aa5d 100%);
   padding: 80px 0 88px 0; }
@@ -890,5 +1132,182 @@ footer {
   vertical-align: top; }
 .notification-item .notification-item-intro {
   margin-bottom: 30px; }
+
+.filter-nav {
+  margin: 40px 0 20px 0;
+  padding: 0;
+  list-style: none; }
+  .filter-nav li {
+    display: inline-block;
+    cursor: pointer;
+    color: #505050;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Campton Book";
+    padding: 7.5px 16px;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .filter-nav li:hover {
+      font-family: "Campton Semi Bold";
+      color: #12AA5D;
+      background: #EEF5F0;
+      border: 1px solid #E4EBE6;
+      border-radius: 20px;
+      padding: 7.5px 32px; }
+    .filter-nav li.active {
+      font-family: "Campton Semi Bold";
+      color: #12AA5D;
+      background: #EEF5F0;
+      border: 1px solid #E4EBE6;
+      border-radius: 20px;
+      padding: 7.5px 32px;
+      margin-right: 15px; }
+    @media all and (-ms-high-contrast: none) {
+      .filter-nav li {
+        display: none; }
+        .filter-nav li:first-child {
+          display: inline-block; } }
+
+.filter-container .row {
+  padding: 0 10px !important;
+  margin-left: -20px; }
+  .filter-container .row [class*="col-"] {
+    padding: 10px; }
+.filter-container .filtr-item {
+  display: inline-block;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer; }
+  .filter-container .filtr-item .img-container {
+    height: 167px;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden; }
+    .filter-container .filtr-item .img-container img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+  .filter-container .filtr-item .filtr-item-content {
+    background: #0B9B52;
+    border-top: 3px solid #ffffff;
+    padding: 12px 16px 14px 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+    position: relative;
+    z-index: 9; }
+    .filter-container .filtr-item .filtr-item-content span,
+    .filter-container .filtr-item .filtr-item-content a {
+      display: block;
+      font-family: "Campton Book";
+      font-size: 14px;
+      line-height: 20px;
+      color: #C2E8D5;
+      margin-bottom: 0; }
+      .filter-container .filtr-item .filtr-item-content span.name,
+      .filter-container .filtr-item .filtr-item-content a.name {
+        font-family: "Campton Semi Bold";
+        color: #ffffff; }
+    .filter-container .filtr-item .filtr-item-content a {
+      display: table; }
+      .filter-container .filtr-item .filtr-item-content a:hover {
+        color: #C2E8D5; }
+        .filter-container .filtr-item .filtr-item-content a:hover:after {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1); }
+      .filter-container .filtr-item .filtr-item-content a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        background: #C2E8D5; }
+
+.company-person-container {
+  margin-bottom: 130px; }
+  .company-person-container .filtr-item:hover .img-container:after {
+    opacity: 0.6; }
+  .company-person-container .filtr-item:hover .img-container .person-social-container {
+    transform: translateY(-57px);
+    -webkit-transform: translateY(-57px);
+    -moz-transform: translateY(-57px);
+    -ms-transform: translateY(-57px);
+    -o-transform: translateY(-57px);
+    bottom: 0; }
+  .company-person-container .filtr-item:hover .img-container img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  .company-person-container .filtr-item .img-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    background: #000000;
+    transition: opacity 0.5s cubic-bezier(0.35, 0.52, 0.2, 1);
+    opacity: 0; }
+  .company-person-container .filtr-item .img-container .person-social-container {
+    position: absolute;
+    left: 57px;
+    font-size: 0;
+    z-index: 9;
+    bottom: -38px;
+    transition: transform 0.5s cubic-bezier(0.35, 0.52, 0.2, 1); }
+    .company-person-container .filtr-item .img-container .person-social-container a {
+      display: inline-block; }
+      .company-person-container .filtr-item .img-container .person-social-container a:after {
+        content: "";
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        height: 37.65px;
+        width: 37.65px;
+        background-image: url("/assets/images/icons/hover-insta.svg"); }
+      .company-person-container .filtr-item .img-container .person-social-container a:hover:after {
+        opacity: 0.8; }
+      .company-person-container .filtr-item .img-container .person-social-container a.insta-icon {
+        margin-right: 28px;
+        height: 37.65px;
+        width: 37.65px; }
+      .company-person-container .filtr-item .img-container .person-social-container a.twitter-icon {
+        width: 46.33px;
+        height: 37.65px; }
+        .company-person-container .filtr-item .img-container .person-social-container a.twitter-icon:after {
+          width: 46.33px;
+          background-image: url("/assets/images/icons/hover-twitter.svg"); }
 
 /*# sourceMappingURL=main.css.map */

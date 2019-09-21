@@ -109,35 +109,82 @@ a {
 }
 // Buttons
 .primary-btn {
-    background-color: transparent;
+    background-color: #12AA5D;
+    border: 2px solid #12AA5D;
     color: $white;
-    font-size: 30px;
-    line-height: 30px;
-    padding: 12px 52px 14px 52px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 19px 7px 17px;
     text-align: center;
-    border-radius: 0;
-    letter-spacing: 1.8px;
+    border-radius: 16px;
+    letter-spacing: 0.02em;    
     position: relative;
     z-index: 1;
-    border: 2px solid $white;
     display: inline-block;
     text-transform: uppercase;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: $camptonBook;
+    text-transform: initial;
+    margin-top: 5px;
     &:hover {
         text-decoration: none;
-        outline: 0;
-        background-color: $white;
+        outline: 0;     
+        color: #12AA5D;
+        background: $white;
     }
     &:focus {
         text-decoration: none;
         outline: 0;
+        color: #12AA5D;
     }
     &:active {
         outline: 0;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("/assets/images/icons/light-green-right-icon.svg");
+        width: 8px;
+        height: 12px;
+        position: relative;
+        top: 1px;
+        margin-left: 18px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    &.orange-btn {
+        background-color: $mainOrange;
+        border-color: $mainOrange;
+        &:hover {  
+            background: $white;
+            color: $mainOrange;
+            &:after {
+                background-image: url("/assets/images/icons/hover-light-orange-right-icon.svg");
+            }
+        }
+        &:focus {
+            background: $white;
+            color: $mainOrange;
+            &:after {
+                background-image: url("/assets/images/icons/hover-light-orange-right-icon.svg");
+            }
+        }
+        &:after {
+            background-image: url("/assets/images/icons/light-orange-right-icon.svg");
+        }
+    }
+
+    &.no-icon {
+        &:after {
+            display: none;
+        }
     }
 }
 .container { 
@@ -153,4 +200,14 @@ a {
 }
 .top-spacing {
     padding-top: 80px;
+}
+.add-spacing {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.half-width {
+    width: 50%;
+    @include media-xs {
+        width: 100%;
+    }
 }

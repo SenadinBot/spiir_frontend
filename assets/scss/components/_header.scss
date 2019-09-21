@@ -106,6 +106,10 @@ header {
         top: -4px;
         right: 0px;
         transform: translateY(16px);
+        -webkit-transform: translateY(16px);
+        -moz-transform: translateY(16px);
+        -ms-transform: translateY(16px);
+        -o-transform: translateY(16px);
         background: #6D645D;
         transition: all 0ms 300ms;
         &:before {
