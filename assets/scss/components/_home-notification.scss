@@ -3,7 +3,7 @@
     padding: 80px 0 88px 0;
     hr {
         border-color: rgba(255, 255, 255, 0.3);
-        margin: 44px 0 60px 0;
+        margin: 13px 0 60px 0;
     }
     p {
         color: #C2E8D5;
@@ -43,5 +43,42 @@
     }
     .notification-item-intro {
         margin-bottom: 30px;
+    }
+}
+.msg-animation-container {
+    .msg-animation {
+        position: absolute;
+        &.msg-one {
+            top: 6px;
+            right: 55px;
+        }
+        &.msg-two {
+            top: 101px;
+            left: 0;
+        }
+        &.msg-three {
+            bottom: 146px;
+            right: 30px;
+        }
+        &.msg-four {
+            bottom: 49px;
+            left: 40px;
+        }
+    }
+}
+.msg-animation-container {
+    .medium-animate {
+        -webkit-animation-duration: initial;
+        animation-duration: initial;
+        -webkit-animation-fill-mode: none;
+        animation-fill-mode: none;
+    }
+    &.start-animation {
+        .medium-animate {
+            -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
     }
 }

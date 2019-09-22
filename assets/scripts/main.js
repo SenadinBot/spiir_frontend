@@ -1,5 +1,25 @@
 $(document).ready(function () {
-
+    // Start Animation On Scroll
+    const $obj = $('.msg-animation-container');
+    if ($obj.length) {
+        const { top } = $obj.offset();
+    }
+    console.log('$obj.length', $obj.length);
+    $(window).scroll(function () {
+        const position = $(this).scrollTop() + 115;
+        if (position >= $('.msg-animation-container').offset().top - 200) {
+            console.log('test');
+            $obj.addClass('start-animation');
+        } else {
+            $obj.removeClass('start-animation');
+        }
+    });
+    $(window).on('load', function () {
+        const position = $(this).scrollTop() + 115;
+        if (position >= $('.msg-animation-container').offset().top - 200) {
+            $('.msg-animation-container').addClass('start-animation');
+        }
+    });
     // Cases animation
     AOS.init({
         duration: 700
@@ -13,13 +33,14 @@ $(document).ready(function () {
     });
 
     // Brand Image Carousel
-    $('.brand-image .jarallax-img').slick({
+    $('.blog-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
-        arrows: false,
+        arrows: true,
+        centerMode: true,
     });
 
     // Number Animation on Scroll
@@ -137,7 +158,7 @@ $(document).ready(function () {
     }
 
     // Custom Category Filter
-    if (!(/Trident\/|MSIE/.test(window.navigator.userAgent))) {
+    if (!(/Trident\/|MSIE/.test(window.navigator.userAgent)) && $('.filter').length) {
         var filterSingle = $('.filter').filterizr({
             setupControls: false
         });
@@ -147,5 +168,5 @@ $(document).ready(function () {
             var filter = $(this).data('fltr');
         });
     }
-    
+
 });

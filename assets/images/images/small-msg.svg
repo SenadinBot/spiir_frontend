@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="251.553" height="72.671" viewBox="0 0 251.553 72.671">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle" width="251.553" height="72.671" rx="11.18" fill="rgba(255,255,255,0.8)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_22" data-name="Group 22" transform="translate(0 0)">
+    <g id="Rectangle_2" data-name="Rectangle 2">
+      <rect id="Rectangle-2" data-name="Rectangle" width="251.553" height="72.671" rx="11.18" fill="rgba(255,255,255,0.8)"/>
+      <g id="Rectangle_2-2" data-name="Rectangle 2" clip-path="url(#clip-path)">
+        <text id="SPIIR" transform="translate(27.95 10.062)" fill="#4f4f4f" font-size="10.062" font-family="Campton-SemiBold, Campton" font-weight="600" letter-spacing="-0.006em"><tspan x="0" y="10">SPIIR</tspan></text>
+        <text id="Hooray_Du_har_få" data-name="Hooray! 🤩 Du har få" transform="translate(8.944 40.068)" font-size="11.18" font-family="Campton-Medium, Campton" font-weight="500"><tspan x="0" y="0">Hooray! </tspan><tspan y="0" font-family="AppleColorEmoji, Apple Color Emoji" font-weight="400">🤩</tspan><tspan y="0"></tspan><tspan font-family="Campton-Book, Campton" font-weight="400"><tspan x="0" y="16.77">Du har fået løn. Det skal da fejres, ik’? </tspan><tspan y="16.77" font-family="AppleColorEmoji, Apple Color Emoji">🕺</tspan><tspan y="16.77"> </tspan></tspan></text>
+      </g>
+    </g>
+    <g id="Group_2_Copy" data-name="Group 2 Copy" transform="translate(7.826 7.826)">
+      <rect id="Mask" width="15.652" height="15.652" rx="3.913" fill="#0bc767"/>
+      <g id="Group_3" data-name="Group 3" transform="translate(1.269 4.448)">
+        <ellipse id="Oval" cx="2.738" cy="2.898" rx="2.738" ry="2.898" transform="matrix(0.985, -0.174, 0.174, 0.985, 0.015, 0.964)" fill="#fff"/>
+        <ellipse id="Oval_Copy_3" data-name="Oval Copy 3" cx="1.229" cy="1.329" rx="1.229" ry="1.329" transform="matrix(0.985, -0.174, 0.174, 0.985, 1.954, 2.195)" fill="#37474f"/>
+        <ellipse id="Oval_Copy_6" data-name="Oval Copy 6" cx="0.418" cy="0.456" rx="0.418" ry="0.456" transform="translate(2.98 2.359)" fill="rgba(255,255,255,0.44)"/>
+      </g>
+      <g id="Group_4" data-name="Group 4" transform="translate(8.01 4.448)">
+        <ellipse id="Oval_Copy" data-name="Oval Copy" cx="2.738" cy="2.898" rx="2.738" ry="2.898" transform="matrix(0.985, 0.174, -0.174, 0.985, 1.021, 0.013)" fill="#fff"/>
+        <ellipse id="Oval-2" data-name="Oval" cx="1.229" cy="1.329" rx="1.229" ry="1.329" transform="matrix(0.985, 0.174, -0.174, 0.985, 2.093, 1.768)" fill="#37474f"/>
+        <ellipse id="Oval_Copy_7" data-name="Oval Copy 7" cx="0.418" cy="0.456" rx="0.418" ry="0.456" transform="translate(2.657 2.359)" fill="rgba(255,255,255,0.44)"/>
+      </g>
+      <path id="Boca_Cerrada" data-name="Boca Cerrada" d="M6.386.005c.249-.047.369.245.189.433a4.5,4.5,0,0,1-3.245,1.2A4.53,4.53,0,0,1,.086.439C-.093.25.026-.041.274.006a10.545,10.545,0,0,0,1.2.419A8.235,8.235,0,0,0,3.318.657h.024A8.236,8.236,0,0,0,5.188.424a10.547,10.547,0,0,0,1.2-.419" transform="translate(4.565 12.639) rotate(-8)" opacity="0.44"/>
+      <g id="Group" transform="translate(2.165 2.155)">
+        <path id="Fill_1_Copy" data-name="Fill 1 Copy" d="M3.434,0c.134.025.2-.132.1-.233A2.419,2.419,0,0,0,1.791-.883,2.437,2.437,0,0,0,.046-.236c-.1.1-.032.258.1.233A5.673,5.673,0,0,1,.792-.228a4.429,4.429,0,0,1,.993-.125H1.8a4.428,4.428,0,0,1,.993.125C3.122-.148,3.1-.066,3.434,0Z" transform="translate(0.125 2.028) rotate(-8)" stroke="#000" stroke-miterlimit="10" stroke-width="0.559" opacity="0.15"/>
+        <path id="Fill_1_Copy_5" data-name="Fill 1 Copy 5" d="M3.435,0c.134.025.2-.132.1-.233A2.42,2.42,0,0,0,1.791-.883,2.437,2.437,0,0,0,.046-.236c-.1.1-.032.258.1.233A5.672,5.672,0,0,1,.792-.228a4.428,4.428,0,0,1,.993-.125H1.8a4.428,4.428,0,0,1,.993.125A5.67,5.67,0,0,1,3.435,0" transform="translate(7.67 0.883)" stroke="#000" stroke-miterlimit="10" stroke-width="0.559" opacity="0.15"/>
+      </g>
+    </g>
+  </g>
+</svg>

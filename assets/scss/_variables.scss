@@ -93,5 +93,10 @@ $camptonSemiBoldItalic: "Campton Semi Bold Italic";
 .container {
     @include media-lg() {
         max-width: 990px;
-  }
+    }
+    &.img-container {
+        @include media-lg() {
+            max-width: 1440px;
+        }
+    }
 }

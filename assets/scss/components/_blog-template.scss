@@ -35,6 +35,9 @@
     .filtr-item-content {
         padding: 29px 38px 21px 24px;
         position: relative;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background: $white;
         .blog-author {
             border-top: 1px solid #E4EBE6;
             padding-top: 20px;
@@ -115,6 +118,7 @@
             }
         }
         .filtr-item-content {
+            background-color: transparent;
             &:after,
             &:before {
                 opacity: 1;
@@ -234,6 +238,290 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.blog-carousel-container {
+    padding-top: 10px;
+    .blog-carousel {
+        height: 460px;
+        border-radius: 8px;
+        .slick-track,
+        .slick-list {
+            height: 100%;
+        }
+        .slick-slide {
+            padding: 0 5px;
+        }
+        .slick-arrow {
+            &:before {
+                display: none;
+            }
+            &:after {
+                content: "";
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("/assets/images/icons/slider-icon.svg");
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                display: block;
+            }
+            &:hover {
+                &:after {
+                    opacity: 0.8;
+                } 
+            }
+        }
+        .slick-prev {
+            left: 76px;
+        }
+        .slick-next {
+            right: 76px;
+        }
+        .slick-prev, 
+        .slick-next {
+            width: 40px;
+            height: 40px;
+            z-index: 9;
+        }
+    }
+    .blog-slide-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8px;
+        &:before {
+            content: "";
+            border-radius: 8px;
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+        }
+    }
+    .blog-slide-content {
+        position: absolute;
+        bottom: 105px;
+        left: 0;
+        z-index: 9;
+        h5 {
+            color: $white;
+        }
+        h2 {
+            color: $white;
+            width: 74%;
+        }
+        .blog-author {
+            .img-container {
+                display: inline-block;
+                vertical-align: top;
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                margin-right: 8px;
+            }
+            .blog-author-info {
+                display: inline-block;
+                vertical-align: top;
+                width: calc(100% - 45px);
+                span {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $white;
+                    opacity: 0.8;
+                    &.name {
+                        font-family: $camptonSemiBold;
+                        letter-spacing: 0.4px;
+                    }
+                    &.time {
+                        font-family: $camptonBook;
+                    }
+                }
+            }
+        }
+    }
+}
+.blog-detail-intro-container {
+    padding: 73px 0 35px 0;
+    h5 {
+
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 22px;
+        line-height: 30px;
+        color: #828282;
+    }
+}
+.blog-detail-img-container {
+    height: 460px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:before {
+        content: "";
+        border-radius: 8px;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.35;
+    }
+}
+.blog-detail-content-container {
+    padding: 68px 0 40px 0;
+    .blog-author-container {
+        vertical-align: top;
+        display: inline-block;
+        width: 184px;
+        margin-right: 54px;
+        .blog-author {
+            margin-bottom: 20px;
+            .img-container {
+                display: block;
+                width: 64px;
+                height: 64px;
+                border-radius: 100%;
+                margin-bottom: 8px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .blog-author-info {
+                display: block;
+                span {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 17px;
+                    &.name {
+                        color: #585858;
+                        font-family: $camptonSemiBold;
+                        letter-spacing: 0.4px;
+                        margin-bottom: 3px;
+                    }
+                    &.time {
+                        color: #828282;
+                        font-family: $camptonBook;
+                    }
+                }
+            }
+        }
+        .blog-social {
+            ul {
+                li {
+                    margin-right: 12px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        &.fcb-icon {
+                            img {
+                                width: 23.19px;
+                                height: 23.04px;
+                            }
+                        }
+                        &.insta-icon {
+                            img {
+                                width: 23.04px;
+                                height: 23.04px;
+                            }
+                        }
+                        &.twitter-icon {
+                            img {
+                                width: 23.33px;
+                                height: 19.04px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blog-detail-content {
+        vertical-align: top;
+        display: inline-block;
+        width: calc(100% - 244px);
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            margin: 15px 0 25px 0;
+        }
+        p {
+            color: #585858;
+            font-family: $camptonLight;
+            b,
+            strong {
+                font-family: $camptonSemiBold;
+            }
+        }
+        h4 {
+            color: #585858;
+            font-family: $camptonLight;
+        }
+        .blog-social {
+            border-top: 1px solid #D8D8D8;
+            border-bottom: 1px solid #D8D8D8;
+            padding-top: 22px;
+            padding-bottom: 18px;
+            margin-bottom: 12px;
+            img {
+                margin: 0;
+            }
+            ul {
+                li {
+                    margin-right: 22px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        span {
+            width: 64%;
+        }
+        .blog-detail-footer {
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            span {
+                width: 100%;
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                color: #828282;
             }
         }
     }

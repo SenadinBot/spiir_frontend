@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="631" viewBox="0 0 880 631">
+  <g id="Hero_Section" data-name="Hero Section" transform="translate(-517 -28)">
+    <path id="Combined_Shape" data-name="Combined Shape" d="M601,310H399a20,20,0,0,1-20-20V213a20,20,0,0,1,20-20h62V63a20,20,0,0,1,20-20H605a20,20,0,0,1,20,20V168.006A99.777,99.777,0,0,1,701,133h2A100,100,0,0,1,803,233v77Zm-480,0H20A20,20,0,0,1,0,290V20A20,20,0,0,1,20,0H144a20,20,0,0,1,20,20V98h81a20,20,0,0,1,20,20V290a20,20,0,0,1-20,20Z" transform="translate(517 28)" fill="#109c55" opacity="0.393"/>
+    <ellipse id="Oval" cx="434" cy="238" rx="434" ry="238" transform="translate(529 183)" fill="#2cb789"/>
+    <g id="Group_10" data-name="Group 10" transform="translate(1119 173)">
+      <path id="Fill_16" data-name="Fill 16" d="M28.538,0s3.845,16.769-4.708,30.509S5.391,37.185,5.391,37.185s-10.612-5.9-2.059-19.636S28.538,0,28.538,0" transform="translate(6.136 0.394)" fill="#fbc234"/>
+      <path id="Fill_20" data-name="Fill 20" d="M7.315,0A45.978,45.978,0,0,0,0,24.481C.107,38.446,7.6,37.8,7.6,37.8s7.5.535,7.4-13.431A45.961,45.961,0,0,0,7.315,0" transform="translate(0.136 2.194)" fill="#2cb789"/>
+    </g>
+    <path id="Fill_24" data-name="Fill 24" d="M107.909,56.868c5.486-3.647,8.973-10.974,7.737-17.44A17.263,17.263,0,0,0,102.59,26.119c-3.73-.79-7.613-.3-11.4-.757s-7.836-2.259-9.168-5.829c-1.722-4.609,1.8-9.96.067-14.565C80.344.331,74.06-.947,69.373.664S60.987,5.854,56.816,8.53a36.213,36.213,0,0,1-16.7,5.6c-4.83.373-9.745-.229-14.5.7s-9.587,3.933-10.648,8.658c-.881,3.92.953,8.365-1,11.874-2,3.585-6.832,4.265-10.088,6.765a10.729,10.729,0,0,0-1.683,14.74Z" transform="translate(694.9 200.415) rotate(-19)" fill="#2cb789"/>
+    <g id="Group_12" data-name="Group 12" transform="matrix(1, 0.017, -0.017, 1, 823.482, 13.62)">
+      <path id="Fill_44" data-name="Fill 44" d="M25.324,34.182H3.461L0,0H28.786Z" transform="matrix(1, -0.017, 0.017, 1, 6.704, 24.454)" fill="#fff" opacity="0.537"/>
+    </g>
+    <g id="tingling-things" transform="translate(595 61)">
+      <ellipse id="Oval_Copy_5" data-name="Oval Copy 5" cx="6.867" cy="6.866" rx="6.867" ry="6.866" transform="translate(0 177)" fill="rgba(0,0,0,0.21)" opacity="0.61"/>
+      <ellipse id="Oval_Copy_6" data-name="Oval Copy 6" cx="6.867" cy="6.866" rx="6.867" ry="6.866" transform="translate(202 79)" fill="#fff"/>
+      <path id="Triangle_Copy" data-name="Triangle Copy" d="M9.393,6.931a4.063,4.063,0,0,1,7.209,0l6.31,12.131A4.063,4.063,0,0,1,19.307,25L6.69,25a4.063,4.063,0,0,1-3.6-5.937Z" transform="matrix(-0.438, 0.899, -0.899, -0.438, 338.934, 92.295)" fill="rgba(255,255,255,0.53)" opacity="0.507"/>
+      <path id="Stroke_1_Copy_3" data-name="Stroke 1 Copy 3" d="M0,0C2.061,2.95,4.008,6.974,8.006,6.979S11.994.016,15.993.021,20,6.995,24,7" transform="matrix(-0.469, 0.883, -0.883, -0.469, 129.602, 4.165)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8" opacity="0.693"/>
+      <circle id="Oval_Copy" data-name="Oval Copy" cx="8.5" cy="8.5" r="8.5" transform="translate(561.599 16.508)" fill="rgba(0,0,0,0.12)"/>
+    </g>
+  </g>
+</svg>
