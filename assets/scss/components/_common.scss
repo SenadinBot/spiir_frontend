@@ -87,3 +87,49 @@
         object-fit: contain
     }
 }
+.blog-social {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                img {
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    opacity: 0.6;
+                }
+                &.fcb-icon {
+                    img {
+                        width: 38.66px;
+                        height: 38.4px;
+                    }
+                }
+                &.insta-icon {
+                    img {
+                        width: 38.4px;
+                        height: 38.4px;
+                    }
+                }
+                &.twitter-icon {
+                    img {
+                        width: 38.89px;
+                        height: 31.73px;
+                    }
+                }
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

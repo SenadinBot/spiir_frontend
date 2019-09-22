@@ -1,0 +1,240 @@
+.blog-item-container {
+    background-color: $white;
+    border-radius: 8px;
+    border: 1px solid #E4EBE6;
+    display: block;
+    .blog-img-container {
+        height: 160px;
+        position: relative;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+            background: #000000;
+            transition: opacity .5s cubic-bezier(.35,.52,.2,1);
+            opacity: 0;
+        }
+    }
+    .filtr-item-content {
+        padding: 29px 38px 21px 24px;
+        position: relative;
+        .blog-author {
+            border-top: 1px solid #E4EBE6;
+            padding-top: 20px;
+            margin-top: 25px;
+            .img-container {
+                display: inline-block;
+                vertical-align: top;
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                margin-right: 8px;
+            }
+            .blog-author-info {
+                display: inline-block;
+                vertical-align: top;
+                width: calc(100% - 45px);
+                span {
+                    display: block;
+                    font-size: 12px;
+                    line-height: 14px;
+                    &.name {
+                        color: #585858;
+                        font-family: $camptonSemiBold;
+                        letter-spacing: 0.4px;
+                        margin-bottom: 3px;
+                    }
+                    &.time {
+                        color: #828282;
+                        font-family: $camptonBook;
+                    }
+                }
+            }
+        }
+        h5 {
+            font-size: 14px;
+            line-height: 17px;
+            margin: 0 0 3px 0;
+        }
+        h4 {
+            margin-bottom: 20px;
+            min-height: 58px;
+        }
+        p {
+            font-family: $camptonLight;
+        }
+        &:after,
+        &:before {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+            content: '';
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+        }
+        &:before {
+            border-top: 1px solid #aecab6;
+            border-bottom: 1px solid #aecab6;
+            -webkit-transform: scale(0,1);
+        }
+        &:after {
+            border-right: 1px solid #aecab6;
+            border-left: 1px solid #aecab6;
+            -webkit-transform: scale(1,0);
+            transform: scale(1,0);
+        }
+    }
+    &:hover {
+        .blog-img-container {
+            &:after {
+                opacity: 0.6;
+            }
+            img {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+        }
+        .filtr-item-content {
+            &:after,
+            &:before {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+        &:before {
+            opacity: 0.8;
+        }
+    }
+    &:before {
+        content: "";
+        background: #EEF5F0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+}
+.blog-more-load-container {
+    margin-bottom: 58px;
+    .blog-item-container {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: calc(100% / 3 - 13px);
+        margin-right: 15px;
+        background: transparent;
+        @include media-xs {
+            margin-right: 0;
+        }
+        &:nth-child(3n) {
+            margin-right: 0
+        }
+        h4 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        h5 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .filtr-item-content {
+            padding: 29px 15px 21px 24px;
+        }
+    }
+    .btn-container {
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 120px;
+        .primary-btn {
+            min-width: 252px;
+            &:focus {
+                background-color: #12AA5D;
+                color: $white;
+                &:hover {
+                    color: #12AA5D;
+                    background: $white;
+                }
+            }
+        }
+    }
+}
+.blog-social-intro-container {
+    padding: 22px 0 25px 0;
+    position: relative;
+    .blog-social-intro {
+        img {
+            width: 60px;
+            height: 60px;
+            margin-right: 14px;
+            vertical-align: middle;
+        }
+        span {
+            font-family: $camptonSemiBold;
+            font-size: 14px;
+            line-height: 16px;
+            display: inline-block;
+            width: 28%;
+            color: #979797;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+        }
+    }
+    .blog-social {
+        position: absolute;
+        right: 0;
+        top: 32px;
+        ul {
+            li {
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    &.fcb-icon {
+                        img {
+                            width: 22.65px;
+                            height: 22.5px;
+                        }
+                    }
+                    &.insta-icon {
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    &.twitter-icon {
+                        img {
+                            width: 18.92px;
+                            height: 15.44px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

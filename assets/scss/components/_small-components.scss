@@ -182,9 +182,11 @@
     }
     h2 {
         color: $white;
+        margin-bottom: 10px;
     }
     p {
         color: #C2E8D5;
+        width: 67%;
     }
 }
 .num-counter-container {
@@ -254,54 +256,98 @@
         }
     }
 }
-.wrapper {
-    max-width: 500px;
-}
-.nav {
-    display: flex;
-    margin: 15px 0;
-    padding: 0;
-}
-.nav li {
-    font-size: 14px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 80px;
-    margin: 3px;
-    padding: 5px 0;
-    list-style: none;
-    cursor: pointer;
-    transition: all .5s;
-    color: #fff;
-    border-radius: 5px;
-    background-color: hsl(174, 100%, 29%);
-}
-.nav li:hover {
-    background-color: hsl(174, 100%, 35%);
-}
-.nav strong {
-    width: 120px;
-}
-[class^='box-'],
-[class*='box-'] {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 100px;
-    height: 100px;
-    color: #fff;
-    box-shadow: 0 0 0 2px #f1f1f1 inset;
-}
-.box-green {
-    background: green;
-}
-.box-orange {
-    background: orange;
-}
-.box-purple {
-    background: purple;
+.subscribe-form {
+    margin-top: 25px;
+    .primary-btn {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+    }
+    .form-group {
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 4px;
+        margin-bottom: 0;
+        &.error {
+            input {
+                // border: 1px solid #D1001A;
+            }
+            span {
+                &.error-msg {
+                    display: block;
+                }
+            }
+        }
+        .input-group {
+            position: relative;
+        }
+        input {
+            font-family: $camptonBook;
+            color: #828282;
+            font-size: 14px;
+            line-height: 22px;
+            background: $white;
+            width: 100%;
+            padding: 4.5px 17px 4.5px 18px;
+            border: 1px solid transparent;
+            border-radius: 16px;
+            width: 380px;
+            @include media-xs {
+                display: block;
+            }
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                font-family: $camptonBook;
+                color: #828282;
+                font-size: 14px;
+                line-height: 22px;
+                padding: 13px 17px 13px 0;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                font-family: $camptonBook;
+                color: #828282;
+                font-size: 14px;
+                line-height: 22px;
+                padding: 13px 17px 13px 0;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                font-family: $camptonBook;
+                color: #828282;
+                font-size: 14px;
+                line-height: 22px;
+                padding: 13px 17px 13px 0;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                font-family: $camptonBook;
+                color: #828282;
+                font-size: 14px;
+                line-height: 22px;
+                padding: 13px 17px 13px 0;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+        }
+        span {
+            &.error-msg {
+                display: none;
+                position: absolute;
+                top: 49%;
+                right: 10px;
+                color: #D1001A;
+                font-family: $camptonLight;
+                font-size: 12px;
+                line-height: 12px;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+            }
+        }
+    }
 }
