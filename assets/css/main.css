@@ -734,6 +734,11 @@ footer .footer-info-container {
   padding: 25px 0 50px 0;
   margin-top: 101px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .footer-info-container {
+    margin-top: 82px;
+  }
+}
 footer .footer-info-container p {
   color: #C2E8D5;
   font-family: "Campton Light";
@@ -816,6 +821,16 @@ footer .footer-info-container img {
 footer .footer-content {
   width: 70%;
   margin-top: -55px;
+}
+@media (max-width: 767px) {
+  footer .footer-content {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .footer-content {
+    width: 100%;
+  }
 }
 footer .footer-content h4 {
   color: #ffffff;
