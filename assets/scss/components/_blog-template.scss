@@ -186,62 +186,6 @@
         }
     }
 }
-.blog-social-intro-container {
-    padding: 22px 0 25px 0;
-    position: relative;
-    .blog-social-intro {
-        img {
-            width: 60px;
-            height: 60px;
-            margin-right: 14px;
-            vertical-align: middle;
-        }
-        span {
-            font-family: $camptonSemiBold;
-            font-size: 14px;
-            line-height: 16px;
-            display: inline-block;
-            width: 28%;
-            color: #979797;
-            vertical-align: middle;
-            position: relative;
-            top: -2px;
-        }
-    }
-    .blog-social {
-        position: absolute;
-        right: 0;
-        top: 32px;
-        ul {
-            li {
-                margin-right: 20px;
-                &:last-child {
-                    margin-right: 0;
-                }
-                a {
-                    &.fcb-icon {
-                        img {
-                            width: 22.65px;
-                            height: 22.5px;
-                        }
-                    }
-                    &.insta-icon {
-                        img {
-                            width: 24px;
-                            height: 24px;
-                        }
-                    }
-                    &.twitter-icon {
-                        img {
-                            width: 18.92px;
-                            height: 15.44px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 .blog-carousel-container {
     padding-top: 10px;
     .blog-carousel {

@@ -46,6 +46,7 @@
     }
 }
 .msg-animation-container {
+    opacity: 0;
     .msg-animation {
         position: absolute;
         &.msg-one {
@@ -66,19 +67,19 @@
         }
     }
 }
-.msg-animation-container {
-    .medium-animate {
-        -webkit-animation-duration: initial;
-        animation-duration: initial;
-        -webkit-animation-fill-mode: none;
-        animation-fill-mode: none;
-    }
-    &.start-animation {
-        .medium-animate {
-            -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-        }
-    }
-}
+// .msg-animation-container {
+//     .medium-animate {
+//         -webkit-animation-duration: initial;
+//         animation-duration: initial;
+//         -webkit-animation-fill-mode: none;
+//         animation-fill-mode: none;
+//     }
+//     &.start-animation {
+//         .medium-animate {
+//             -webkit-animation-duration: 1.5s;
+//             animation-duration: 1.5s;
+//             -webkit-animation-fill-mode: both;
+//             animation-fill-mode: both;
+//         }
+//     }
+// }

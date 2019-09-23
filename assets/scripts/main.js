@@ -7,17 +7,16 @@ $(document).ready(function () {
     console.log('$obj.length', $obj.length);
     $(window).scroll(function () {
         const position = $(this).scrollTop() + 115;
-        if (position >= $('.msg-animation-container').offset().top - 200) {
-            console.log('test');
-            $obj.addClass('start-animation');
-        } else {
-            $obj.removeClass('start-animation');
+        if (position >= $('.msg-animation-container').offset().top - 250) {
+            $('.msg-animation').addClass('animate fadeInDown');
+            $('.msg-animation-container').animate({'opacity':'1'}, 1000);
         }
     });
     $(window).on('load', function () {
         const position = $(this).scrollTop() + 115;
-        if (position >= $('.msg-animation-container').offset().top - 200) {
-            $('.msg-animation-container').addClass('start-animation');
+        if (position >= $('.msg-animation-container').offset().top - 250) {
+            $('.msg-animation').addClass('animate fadeInDown');            
+            $('.msg-animation-container').animate({'opacity':'1'}, 1000);
         }
     });
     // Cases animation
