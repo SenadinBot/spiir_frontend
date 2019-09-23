@@ -30,6 +30,9 @@ footer {
         @include media-sm {
             margin-top: 82px;
         }
+        @include media-xs {
+            margin-top: 82px;
+        }
         p {
             color: #C2E8D5;
             font-family: $camptonLight;
@@ -115,6 +118,7 @@ footer {
         margin-top: -55px;
         @include media-xs {
             width: 100%;
+            text-align: center;
         }
         @include media-sm {
             width: 100%;
@@ -125,6 +129,10 @@ footer {
             display: inline-block;
             width: calc(100% - 142px);
             margin: 0;
+            @include media-xs {
+                display: block;
+                width: 100%;
+            }
         }
         .footer-content-intro {
             margin-bottom: 20px;
@@ -134,6 +142,10 @@ footer {
                 margin-right: 24px;
                 vertical-align: bottom;
                 display: inline-block;
+                @include media-xs {
+                    display: block;
+                    margin: 0 auto 20px auto;
+                }
             }
         }
         p {
@@ -141,10 +153,16 @@ footer {
             font-size: 14px;
             line-height: 17px;
             width: 82%;
+            @include media-xs {
+                width: 100%;
+            }
         }
     }
     .footer-links {
         margin-top: 36px;
+        @include media-xs {
+            text-align: center;
+        }
         span {
             color: $white;
             font-family: $camptonSemiBold;
@@ -152,6 +170,10 @@ footer {
             line-height: 19px;
             margin-bottom: 7px;
             display: block; 
+            @include media-xs {
+                font-size: 20px; 
+                line-height: 24px;
+            }
         }
         ul {
             list-style: none;
@@ -171,6 +193,10 @@ footer {
                     font-family: $camptonLight;
                     font-size: 14px;
                     line-height: 24px;
+                    @include media-xs {
+                        font-size: 18px; 
+                        line-height: 24px;
+                    }
                     &:after {
                         content: "";
                         position: absolute;

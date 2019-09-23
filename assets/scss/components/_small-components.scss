@@ -42,12 +42,26 @@
 .testimonial-container {
     text-align: center;
     padding: 70px 0 80px 0;
+    @include media-xs {
+        padding: 60px 0 70px 0;
+    }
+    @include media-sm {
+        padding: 60px 0 70px 0;
+    }
     p {
         font-family: $camptonLight;
         font-size: 40px;
         line-height: 48px;
         color: $darkGray;
         margin-bottom: 10px;
+        @include media-xs {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        @include media-sm {
+            font-size: 36px;
+            line-height: 44px;
+        }
     }
     .star-container {
         width: 313px;

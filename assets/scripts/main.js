@@ -1,24 +1,25 @@
 $(document).ready(function () {
     // Start Animation On Scroll
-    const $obj = $('.msg-animation-container');
-    if ($obj.length) {
-        const { top } = $obj.offset();
+    if ($('.msg-animation-container').length) {
+        const $obj = $('.msg-animation-container');
+        if ($obj.length) {
+            const { top } = $obj.offset();
+        }
+        $(window).scroll(function () {
+            const position = $(this).scrollTop() + 115;
+            if (position >= $('.msg-animation-container').offset().top - 250) {
+                $('.msg-animation').addClass('animate fadeInDown');
+                $('.msg-animation-container').animate({ 'opacity': '1' }, 1000);
+            }
+        });
+        $(window).on('load', function () {
+            const position = $(this).scrollTop() + 115;
+            if (position >= $('.msg-animation-container').offset().top - 250) {
+                $('.msg-animation').addClass('animate fadeInDown');
+                $('.msg-animation-container').animate({ 'opacity': '1' }, 1000);
+            }
+        });
     }
-    console.log('$obj.length', $obj.length);
-    $(window).scroll(function () {
-        const position = $(this).scrollTop() + 115;
-        if (position >= $('.msg-animation-container').offset().top - 250) {
-            $('.msg-animation').addClass('animate fadeInDown');
-            $('.msg-animation-container').animate({'opacity':'1'}, 1000);
-        }
-    });
-    $(window).on('load', function () {
-        const position = $(this).scrollTop() + 115;
-        if (position >= $('.msg-animation-container').offset().top - 250) {
-            $('.msg-animation').addClass('animate fadeInDown');            
-            $('.msg-animation-container').animate({'opacity':'1'}, 1000);
-        }
-    });
     // Cases animation
     AOS.init({
         duration: 700
