@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    // Mobile Menu
+    $('.nav-icon-container').on('click', function () {
+        $('body').toggleClass('menu-open');
+    });
+
     // Start Animation On Scroll
     if ($('.msg-animation-container').length) {
         const $obj = $('.msg-animation-container');
@@ -32,7 +38,7 @@ $(document).ready(function () {
         }
     });
 
-    // Brand Image Carousel
+    // Blog Image Carousel
     $('.blog-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -41,6 +47,14 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         arrows: true,
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    centerMode: false
+                }
+            }
+        ]
     });
 
     // Number Animation on Scroll

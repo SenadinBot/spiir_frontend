@@ -191,7 +191,7 @@
     }
 }
 .green-container {
-    background-color: #0B9B52;
+    background: linear-gradient(#0b9b52 0%, #12aa5d 100%);
     h5 {
         color: $mainOrange;
     }
@@ -283,6 +283,15 @@
         display: inline-block;
         margin-right: 4px;
         margin-bottom: 0;
+        @include media-xs-landscape {
+            display: inline-block;
+            width: calc(100% - 235px);
+        }
+        @include media-xs-portrait {
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+        }
         &.error {
             input {
                 // border: 1px solid #D1001A;
@@ -309,6 +318,7 @@
             width: 380px;
             @include media-xs {
                 display: block;
+                width: 100%;
             }
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                 font-family: $camptonBook;

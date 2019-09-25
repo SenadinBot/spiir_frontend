@@ -145,6 +145,9 @@
 }
 .blog-more-load-container {
     margin-bottom: 58px;
+    @include media-xs {
+        margin-bottom: 40px;
+    }
     .blog-item-container {
         margin-bottom: 20px;
         display: inline-block;
@@ -153,6 +156,7 @@
         background: transparent;
         @include media-xs {
             margin-right: 0;
+            width: 100%;
         }
         &:nth-child(3n) {
             margin-right: 0
@@ -167,12 +171,21 @@
         }
         .filtr-item-content {
             padding: 29px 15px 21px 24px;
+            @include media-sm {
+                padding: 24px 13px 16px 13px;
+            }
         }
     }
     .btn-container {
         margin-top: 15px;
         text-align: center;
         margin-bottom: 120px;
+        @include media-xs {
+            margin-bottom: 70px;
+        }
+        @include media-sm {
+            margin-bottom: 100px;
+        }
         .primary-btn {
             min-width: 252px;
             &:focus {
@@ -191,6 +204,9 @@
     .blog-carousel {
         height: 460px;
         border-radius: 8px;
+        @include media-xs {
+            height: 250px;
+        }
         .slick-track,
         .slick-list {
             height: 100%;
@@ -214,6 +230,10 @@
                 -o-transition: all 0.3s ease;
                 transition: all 0.3s ease;
                 display: block;
+                @include media-xs {
+                    width: 30px;
+                    height: 30px;
+                }
             }
             &:hover {
                 &:after {
@@ -223,15 +243,25 @@
         }
         .slick-prev {
             left: 76px;
+            @include media-xs {
+                left: 20px;
+            }
         }
         .slick-next {
             right: 76px;
+            @include media-xs {
+                right: 20px;
+            }
         }
         .slick-prev, 
         .slick-next {
             width: 40px;
             height: 40px;
             z-index: 9;
+            @include media-xs {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
     .blog-slide-img {
@@ -259,12 +289,39 @@
         bottom: 105px;
         left: 0;
         z-index: 9;
+        @include media-md {
+            left: 10%;
+        }
+        @include media-sm {
+            left: 12%;
+        }
+        @include media-xs {
+            left: 60px;
+            bottom: 50px;
+        }
         h5 {
             color: $white;
         }
         h2 {
             color: $white;
             width: 74%;
+            @include media-sm {
+                width: 85%;
+            }
+            @include media-xs {
+                font-size: 26px;
+                line-height: 26px;
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                -ms-box-orient: vertical;
+                box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -moz-line-clamp: 3;
+                -ms-line-clamp: 3;
+                line-clamp: 3;
+                display: -webkit-box;
+            }
         }
         .blog-author {
             .img-container {
@@ -299,6 +356,9 @@
 }
 .blog-detail-intro-container {
     padding: 73px 0 35px 0;
+    @include media-xs {
+        padding: 50px 0 30px 0;
+    }
     h5 {
 
     }
@@ -320,9 +380,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @include media-xs {
+        height: 250px;
+    }
     &:before {
         content: "";
-        border-radius: 8px;
+        // border-radius: 8px;
         background: #000;
         position: absolute;
         top: 0;
@@ -334,11 +397,19 @@
 }
 .blog-detail-content-container {
     padding: 68px 0 40px 0;
+    @include media-xs {
+        padding: 50px 0 30px 0;
+    }
     .blog-author-container {
         vertical-align: top;
         display: inline-block;
         width: 184px;
         margin-right: 54px;
+        @include media-xs {
+            width: 100%;
+            margin-right: 0;
+            text-align: center;
+        }
         .blog-author {
             margin-bottom: 20px;
             .img-container {
@@ -347,6 +418,9 @@
                 height: 64px;
                 border-radius: 100%;
                 margin-bottom: 8px;
+                @include media-xs {
+                    margin: 0 auto 8px auto;
+                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -407,6 +481,11 @@
         vertical-align: top;
         display: inline-block;
         width: calc(100% - 244px);
+        @include media-xs {
+            width: 100%;
+            display: block;
+            margin-top: 30px;
+        }
         img {
             max-width: 100%;
             max-height: 100%;
@@ -431,6 +510,9 @@
             padding-top: 22px;
             padding-bottom: 18px;
             margin-bottom: 12px;
+            @include media-xs {
+                text-align: center;
+            }
             img {
                 margin: 0;
             }
@@ -451,6 +533,15 @@
         h5,
         span {
             width: 64%;
+            @include media-md {
+                width: 67%;
+            }
+            @include media-sm {
+                width: 94%;
+            }
+            @include media-xs {
+                width: 100%;
+            }
         }
         .blog-detail-footer {
             p,

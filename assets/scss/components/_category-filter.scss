@@ -31,6 +31,16 @@
             margin-right: 15px;
             border: 1px solid #E4EBE6;
             background-color: $white;
+            @include media-sm {
+                padding: 7.5px 12px;
+                margin-right: 10px;
+            }
+            @include media-md {
+                padding: 7.5px 22px;
+            }
+            @include media-xs {
+                padding: 7.5px 22px;
+            }
         }
         @media all and (-ms-high-contrast:none) {
             display: none;
@@ -50,6 +60,21 @@
     top: 0;
     right: -15px;
     width: 244px;
+    @include media-sm {
+        right: 0;
+        width: 190px;
+    }
+    @include media-xs {
+        position: relative;
+        right: 0;
+    }
+    @include media-xs-landscape {
+        display: block;
+        margin: 0 0 0 auto;
+    }
+    @include media-xs-portrait {
+        width: 100%;
+    }
     input {
         font-family: $camptonBook;
         color: #828282;
@@ -119,6 +144,21 @@
         margin-left: -20px;
         [class*="col-"] {
             padding: 10px;
+            @include media-sm {
+                padding: 15px;
+            }
+            @include media-xs {
+                padding: 25px 15px;
+                margin: 0;            
+            }
+        }
+        @include media-sm {
+            margin-left: -15px;
+            padding: 0 !important;
+        }
+        @include media-xs {
+            margin-left: -15px;
+            padding: 0 !important;
         }
     }
     .filtr-item {
