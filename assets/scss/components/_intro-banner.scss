@@ -8,6 +8,9 @@
         background: #12aa5d;
         .banner-content {
             top: 70px;
+            @include media-xs {
+                top: 45px;
+            }
         }
     }
     .banner-content {
@@ -17,6 +20,18 @@
         h2 {
             color: $white;
             margin-bottom: 10px;
+            @include media-xs {
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                -ms-box-orient: vertical;
+                box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -moz-line-clamp: 2;
+                -ms-line-clamp: 2;
+                line-clamp: 2;
+                display: -webkit-box;
+            }
         }
         p {
             color: #C2E8D5;
@@ -24,6 +39,18 @@
             margin-bottom: 15px;
             font-size: 18px;
             line-height: 23px;
+            @include media-xs {
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                -ms-box-orient: vertical;
+                box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -moz-line-clamp: 3;
+                -ms-line-clamp: 3;
+                line-clamp: 3;
+                display: -webkit-box;
+            }
         }
     }
     &.city-banner {
@@ -31,11 +58,37 @@
             position: absolute;
             right: -70px;
             bottom: -27px;
+            @include media-md {
+                bottom: -18px;
+            }
+            @include media-sm {
+                bottom: -14px;
+            }
+            @include media-xs {
+                right: -30px;
+                bottom: -8px;
+            }
+            @include media-xs-landscape {
+                bottom: -14px;
+            }
         }
         .person-image {
             position: absolute;
             bottom: -27px;
-            right: -75px;    
+            right: -75px; 
+            @include media-md {
+                bottom: -18px;
+            } 
+            @include media-sm {
+                bottom: -14px;
+            }  
+            @include media-xs {
+                right: -30px;
+                bottom: -8px;
+            }
+            @include media-xs-landscape {
+                bottom: -14px;
+            }
         }
     }
     &.park-banner {

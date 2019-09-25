@@ -207,6 +207,9 @@ a {
 }
 .top-spacing {
     padding-top: 80px;
+    @include media-xs {
+        padding-top: 50px;
+    }
 }
 .medium-top-spacing {
     padding-top: 70px;
@@ -217,6 +220,10 @@ a {
 .add-spacing {
     padding-top: 80px;
     padding-bottom: 100px;
+    @include media-xs {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 .small-spacing {
     padding-top: 50px;
