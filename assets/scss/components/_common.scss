@@ -2,6 +2,15 @@
     position: relative;
     margin: 0;
     padding: 80px 0 120px 0;
+    @include media-sm {
+        padding: 50px 0 100px 0;        
+    }
+    @include media-xs {
+        padding: 50px 0 100px 0;        
+    }
+    @include media-xs-landscape {
+        padding: 50px 0 160px 0;        
+    }
     @media all and (-ms-high-contrast:none) {
         overflow: hidden;
     }
@@ -113,15 +122,6 @@
         max-width: 100%;
         max-height: 100%;
         object-fit: contain
-    }
-    @include media-xs {
-        margin-top: 0;
-    }
-    @include media-sm {
-        margin-top: 0;
-    }
-    @include media-md {
-        margin-top: 15pxs;
     }
 }
 .blog-social {

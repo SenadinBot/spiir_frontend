@@ -9,7 +9,7 @@ body {
     }
     overflow-x: hidden;
     &.menu-open {   
-        overflow-y: hidden;    
+        overflow-y: hidden;   
         header {
             .nav-icon-container {
                 .menuicon__bar:nth-child(3) {
@@ -38,6 +38,7 @@ body {
                 }
             }
             nav {
+                height: auto;
                 ul {
                     visibility: visible;
                     li {
@@ -222,6 +223,12 @@ header {
             background: none;
             display: inline-block;
             float: right;
+        }
+        @include media-xs {
+            height: 0;
+        }
+        @include media-sm {
+            height: 0;
         }
         ul {
             list-style: none;

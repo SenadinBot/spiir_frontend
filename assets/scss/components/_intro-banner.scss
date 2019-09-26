@@ -96,11 +96,40 @@
             position: absolute;
             right: -95px;
             bottom: -363px;
+            @include media-xs {
+                bottom: -90px;
+                width: 60%;
+            }
+            @include media-xs-landscape {
+                bottom: -135px;
+                width: 50%;
+            }
+            @include media-sm {
+                bottom: -140px;
+                width: 47%;
+            }
         }
         .person-image {
             position: absolute;
             bottom: 0;
-            right: 605px;    
+            right: 605px;
+            @include media-xs {
+                right: 180px;
+            }  
+            @include media-sm {
+                right: 180px;
+            }
+            @include media-md {
+                right: 355px;
+            }
+            img {
+                @include media-xs {
+                    height: 100px
+                }
+                @include media-sm {
+                    height: 140px
+                }
+            }  
         }
         .banner-content {
             p {
@@ -111,11 +140,36 @@
             position: absolute;
             bottom: 0;
             right: 180px;
+            @include media-xs {
+                right: 30px;
+            }
+            @include media-sm {
+                right: 30px;
+            }
+            @include media-md {
+                right: 30px;
+            }
+            img {
+                @include media-xs {
+                    width: 80px
+                }
+                @include media-sm {
+                    width: 100px
+                }
+            }
         }
         .park-flower {
             position: absolute;
             bottom: -20px;
-            left: 135px;        
+            left: 135px;  
+            @include media-xs {
+                width: 30px;
+                bottom: -5px;
+                left: 30px;
+            }  
+            @include media-sm {
+                width: 50px;
+            }      
         }
     }
     &.big-park-banner {

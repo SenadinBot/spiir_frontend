@@ -108,6 +108,9 @@
     background: #fff;
     border: 1px solid #e4ebe6;
     border-radius: 8px;
+    @include media-xs {
+        margin-top: 35px;      
+    }
     .card {
         border-radius: 0;
         border: none;
@@ -121,6 +124,9 @@
             border-radius: 0;
             border: none;
             padding: 15px 15px 15px 82px;
+            @include media-xs-portrait {
+                padding: 15px 15px 15px 55px;
+            }
             button {
                 border: none;
                 background: transparent;
@@ -165,6 +171,9 @@
                     transition: all 0.3s ease-in-out 0s;
                     background: $darkGray;
                 }
+                @include media-xs {
+                    text-align: left;    
+                }
             }
             [data-toggle="collapse"].accordion-icon:before {
                 content: "";
@@ -176,6 +185,9 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-image: url("/assets/images/icons/green-up.svg");
+                @include media-xs-portrait {
+                    left: -34px;
+                }
             }
             [data-toggle="collapse"].collapsed.accordion-icon:before {
                 content: "";
@@ -184,11 +196,20 @@
         }
         .card-body {
             padding: 0 30px 25px 82px;
+            @include media-xs-portrait {
+                padding: 15px 15px 15px 55px;
+            }
             p {
                 margin-bottom: 25px;
             }
         }
+        @include media-xs {
+            text-align: left;    
+        }
     }
+}
+.gray-container {
+    background: $mainGray;
 }
 .green-container {
     background: linear-gradient(#0b9b52 0%, #12aa5d 100%);
