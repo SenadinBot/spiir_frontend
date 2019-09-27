@@ -5,6 +5,9 @@
         display: block;
         padding: 50px 0 40px 0;
     }
+    @include media-sm {
+        padding: 60px 0 50px 0;
+    }
     .column-information-item {
         text-align: center;
         display: flex;

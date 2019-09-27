@@ -177,42 +177,109 @@
             position: absolute;
             right: -230px;
             bottom: -45px;
+            @include media-xs {
+                right: -6px;
+                bottom: -8px;
+                width: 80%;
+            }
         }
         .person-image {
             position: absolute;
             bottom: -44px;
-            right: 480px;   
+            right: 480px; 
+            @include media-md {
+                right: 165px;
+            }  
+            @include media-sm {
+                bottom: -30px;
+                right: 165px;
+            }
+            @include media-xs {
+                bottom: -12px;
+                right: 150px;
+            }
+            img {
+                @include media-sm {
+                    height: 350px;
+                }
+                @include media-xs {
+                    height: 130px;
+                }
+            }
         }
         .banner-content {
             p {
                 width: 100%;
             }
         }
-        .park-cart {
-            position: absolute;
-            bottom: 0;
-            right: 180px;
-        }
         .city-flower {
             position: absolute;
             bottom: -34px;
-            left: 43px;       
+            left: 43px; 
+            @include media-sm {
+                width: 50px;
+                bottom: -10px;
+            }  
+            @include media-xs {
+                width: 35px;
+                bottom: -5px;
+                left: 13px;
+            } 
         }
         .small-msg {
             position: absolute;
             top: 185px;
             right: 275px;
+            @include media-md {
+                right: 0;
+            }
+            @include media-sm {
+                right: 20px;
+                width: 200px;
+            }
+            @include media-xs {
+                right: 18px;
+                width: 120px;
+                bottom: 90px;
+                top: initial;
+            }
         }
         .big-msg {
             position: absolute;
             top: 78px;
             right: 268px;
+            @include media-md {
+                right: 0;
+            }
+            @include media-sm {
+                right: 15px;
+                width: 212px;
+                top: 95px;
+            }
+            @include media-xs {
+                right: 15px;
+                width: 130px;
+                bottom: 130px;
+                top: initial;
+            }
         }
         .banner-content {
             top: 136px;
+            @include media-xs {
+                top: 72px;
+                width: 95%;
+            }
             h2 {
                 font-size: 48px;
                 line-height: 48px;
+                @include media-sm {
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+                @include media-xs {
+                    font-size: 36px;
+                    line-height: 42px;
+                }
             }
         }
         .download-container {

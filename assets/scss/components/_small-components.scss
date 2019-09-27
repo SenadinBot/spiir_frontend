@@ -1,9 +1,19 @@
 .feature-item-container {
     padding-bottom: 155px;
     margin-top: 55px;
+    @include media-sm {
+        padding-bottom: 100px;
+    }
+    @include media-xs {
+        padding-bottom: 80px;
+        margin-top: 30px;
+    }
     hr {
         margin: 35px 0 44px 0;
         border-color: #E4EBE6;
+        @include media-xs {
+            margin: 5px 0 44px 0;
+        }
     }
     .feature-item {
         display: inline-block;
@@ -14,6 +24,10 @@
         }
         @include media-xs {
             width: 100%;
+            margin-bottom: 30px;
+        }
+        @include media-xs-portrait {
+            margin-right: 0;
         }
         @include media-xs-landscape {
             width: calc(100% / 2 - 10px);
