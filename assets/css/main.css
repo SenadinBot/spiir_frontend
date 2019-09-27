@@ -1351,25 +1351,26 @@ footer {
           -ms-transform: scaleX(1);
           -o-transform: scaleX(1);
           transform: scaleX(1); }
-        .accordion-container .card .card-header button:after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          bottom: -5px;
-          left: 0;
-          visibility: hidden;
-          -webkit-transform: scaleX(0);
-          -moz-transform: scaleX(0);
-          -ms-transform: scaleX(0);
-          -o-transform: scaleX(0);
-          transform: scaleX(0);
-          -webkit-transition: all 0.3s ease-in-out 0s;
-          -moz-transition: all 0.3s ease-in-out 0s;
-          -ms-transition: all 0.3s ease-in-out 0s;
-          -o-transition: all 0.3s ease-in-out 0s;
-          transition: all 0.3s ease-in-out 0s;
-          background: #505050; }
+        @media (min-width: 1200px) {
+          .accordion-container .card .card-header button:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            -o-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+            background: #505050; } }
         @media (max-width: 767px) {
           .accordion-container .card .card-header button {
             text-align: left; } }
@@ -1883,6 +1884,15 @@ footer {
     -ms-transform: translateY(-57px);
     -o-transform: translateY(-57px);
     bottom: 0; }
+    @media (max-width: 767px) {
+      .company-person-container .filtr-item:hover .img-container .person-social-container {
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        bottom: 33%;
+        left: 50%; } }
   .company-person-container .filtr-item:hover .img-container img {
     -webkit-transform: scale(1.2);
     transform: scale(1.2); }

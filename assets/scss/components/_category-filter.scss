@@ -204,6 +204,15 @@
                     -ms-transform: translateY(-57px);
                     -o-transform: translateY(-57px);
                     bottom: 0;
+                    @include media-xs {
+                        transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        bottom: 33%;
+                        left: 50%;
+                    }
                 }
                 img {
                     -webkit-transform: scale(1.2);
