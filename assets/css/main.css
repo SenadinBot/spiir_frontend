@@ -1729,6 +1729,9 @@ footer {
       padding: 7.5px 32px;
       border: 1px solid #E4EBE6;
       background-color: #ffffff; }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .filter-nav li {
+        padding: 7.5px 4px; } }
     .filter-nav li.active {
       font-family: "Campton Semi Bold";
       color: #12AA5D;
@@ -1748,6 +1751,9 @@ footer {
         .filter-nav li.active {
           padding: 7.5px 12px;
           margin-right: 7px; } }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .filter-nav li.active {
+          padding: 7.5px 10px; } }
     @media all and (-ms-high-contrast: none) {
       .filter-nav li {
         display: none; }

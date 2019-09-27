@@ -26,6 +26,9 @@
             border: 1px solid #E4EBE6;
             background-color: $white;
         }
+        @include media-xs-portrait {
+            padding: 7.5px 4px;
+        }
         &.active {
             font-family: $camptonSemiBold;
             color: #12AA5D;
@@ -44,6 +47,9 @@
             @include media-xs {
                 padding: 7.5px 12px;
                 margin-right: 7px;
+            }
+            @include media-xs-portrait {
+                padding: 7.5px 10px;
             }
         }
         @media all and (-ms-high-contrast:none) {
