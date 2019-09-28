@@ -456,7 +456,11 @@ header {
     transition: all 0.5s; }
     @media (max-width: 767px) {
       header .logo-container {
-        top: 16px; } }
+        top: 16px;
+        z-index: 9; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      header .logo-container {
+        z-index: 9; } }
     header .logo-container a {
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
@@ -625,12 +629,10 @@ header {
       color: #ffffff; }
       @media (max-width: 767px) {
         header nav ul li a:hover {
-          outline: 0;
-          background-color: rgba(0, 0, 0, 0.2); } }
+          outline: 0; } }
       @media (min-width: 768px) and (max-width: 991px) {
         header nav ul li a:hover {
-          outline: 0;
-          background-color: rgba(0, 0, 0, 0.2); } }
+          outline: 0; } }
       header nav ul li a:hover:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
@@ -1058,9 +1060,19 @@ footer {
     .download-container a.ios-icon:before {
       width: 148px;
       background: url("/assets/images/icons/content-ios.svg"); }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .download-container a.ios-icon:before {
+          background: url("/assets/images/icons/footer-ios.svg");
+          width: 123px;
+          height: 40px; } }
     .download-container a.android-icon:before {
       width: 163px;
       background: url("/assets/images/icons/content-android.svg"); }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .download-container a.android-icon:before {
+          background: url("/assets/images/icons/footer-android.svg");
+          width: 135px;
+          height: 40px; } }
 
 .img-container img {
   max-width: 100%;
@@ -2778,18 +2790,30 @@ footer {
   animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
+  @media (max-width: 767px) {
+    .medium-animate {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s; } }
 
 .slow-animate {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
+  @media (max-width: 767px) {
+    .slow-animate {
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s; } }
 
 .very-slow-animate {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
+  @media (max-width: 767px) {
+    .very-slow-animate {
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s; } }
 
 .one {
   -webkit-animation-delay: 0.5s;
@@ -2800,36 +2824,71 @@ footer {
   -webkit-animation-delay: 1.5s;
   -moz-animation-delay: 1.5s;
   animation-delay: 1.5s; }
+  @media (max-width: 767px) {
+    .two {
+      -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s; } }
 
 .three {
   -webkit-animation-delay: 2.5s;
   -moz-animation-delay: 2.5s;
   animation-delay: 2.5s; }
+  @media (max-width: 767px) {
+    .three {
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s; } }
 
 .four {
   -webkit-animation-delay: 3.5s;
   -moz-animation-delay: 3.5s;
   animation-delay: 3.5s; }
+  @media (max-width: 767px) {
+    .four {
+      -webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
+      animation-delay: 2s; } }
 
 .five {
   -webkit-animation-delay: 4.5s;
   -moz-animation-delay: 4.5s;
   animation-delay: 4.5s; }
+  @media (max-width: 767px) {
+    .five {
+      -webkit-animation-delay: 2.5s;
+      -moz-animation-delay: 2.5s;
+      animation-delay: 2.5s; } }
 
 .six {
   -webkit-animation-delay: 5.5s;
   -moz-animation-delay: 5.5s;
   animation-delay: 5.5s; }
+  @media (max-width: 767px) {
+    .six {
+      -webkit-animation-delay: 3s;
+      -moz-animation-delay: 3s;
+      animation-delay: 3s; } }
 
 .seven {
   -webkit-animation-delay: 6.5s;
   -moz-animation-delay: 6.5s;
   animation-delay: 6.5s; }
+  @media (max-width: 767px) {
+    .seven {
+      -webkit-animation-delay: 3.5s;
+      -moz-animation-delay: 3.5s;
+      animation-delay: 3.5s; } }
 
 .eight {
   -webkit-animation-delay: 7.5s;
   -moz-animation-delay: 7.5s;
   animation-delay: 7.5s; }
+  @media (max-width: 767px) {
+    .eight {
+      -webkit-animation-delay: 4s;
+      -moz-animation-delay: 4s;
+      animation-delay: 4s; } }
 
 @-webkit-keyframes fadeInUp {
   from {

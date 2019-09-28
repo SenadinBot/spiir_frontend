@@ -318,18 +318,30 @@
     animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    @include media-xs {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
 }
 .slow-animate {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    @include media-xs {
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+    }
 }
 .very-slow-animate {
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    @include media-xs {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+    }
 }
 .one {
     -webkit-animation-delay: 0.5s;
@@ -340,36 +352,71 @@
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     animation-delay: 1.5s;
+    @include media-xs {
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        animation-delay: 1s;
+    }
 }
 .three {
     -webkit-animation-delay: 2.5s;
     -moz-animation-delay: 2.5s;
     animation-delay: 2.5s;
+    @include media-xs {
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    }
 }
 .four {
     -webkit-animation-delay: 3.5s;
     -moz-animation-delay: 3.5s;
     animation-delay: 3.5s;
+    @include media-xs {
+        -webkit-animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        animation-delay: 2s;
+    }
 }
 .five {
     -webkit-animation-delay: 4.5s;
     -moz-animation-delay: 4.5s;
     animation-delay: 4.5s;
+    @include media-xs {
+        -webkit-animation-delay: 2.5s;
+        -moz-animation-delay: 2.5s;
+        animation-delay: 2.5s;
+    }
 }
 .six {
     -webkit-animation-delay: 5.5s;
     -moz-animation-delay: 5.5s;
     animation-delay: 5.5s;
+    @include media-xs {
+        -webkit-animation-delay: 3s;
+        -moz-animation-delay: 3s;
+        animation-delay: 3s;
+    }
 }
 .seven {
     -webkit-animation-delay: 6.5s;
     -moz-animation-delay: 6.5s;
     animation-delay: 6.5s;
+    @include media-xs {
+        -webkit-animation-delay: 3.5s;
+        -moz-animation-delay: 3.5s;
+        animation-delay: 3.5s;
+    }
 }
 .eight {
     -webkit-animation-delay: 7.5s;
     -moz-animation-delay: 7.5s;
     animation-delay: 7.5s;
+    @include media-xs {
+        -webkit-animation-delay: 4s;
+        -moz-animation-delay: 4s;
+        animation-delay: 4s;
+    }
 }
 @-webkit-keyframes fadeInUp {
     from {

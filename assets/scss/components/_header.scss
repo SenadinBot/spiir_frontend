@@ -187,6 +187,10 @@ header {
         transition: all 0.5s;
         @include media-xs {
             top: 16px;
+            z-index: 9;
+        }
+        @include media-sm {
+            z-index: 9;
         }
         a {
             -webkit-transition: all 0.5s;
@@ -381,11 +385,9 @@ header {
                         color: $white;
                         @include media-xs {
                             outline: 0;
-                            background-color: rgba(0, 0, 0, 0.2);
                         }
                         @include media-sm {
                             outline: 0;
-                            background-color: rgba(0, 0, 0, 0.2);
                         }
                         &:before {
                             visibility: visible;

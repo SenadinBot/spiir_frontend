@@ -112,12 +112,22 @@
             &:before {
                 width: 148px;
                 background: url("/assets/images/icons/content-ios.svg");
+                @include media-xs-portrait {
+                    background: url("/assets/images/icons/footer-ios.svg");
+                    width: 123px;
+                    height: 40px;
+                }
             }
         }
         &.android-icon {
             &:before {
                 width: 163px;
                 background: url("/assets/images/icons/content-android.svg");
+                @include media-xs-portrait {
+                    background: url("/assets/images/icons/footer-android.svg");
+                    width: 135px;
+                    height: 40px;
+                }
             }
         }
     }
