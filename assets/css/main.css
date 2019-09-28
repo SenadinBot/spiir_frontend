@@ -1864,8 +1864,14 @@ footer {
         padding: 15px; } }
     @media (max-width: 767px) {
       .filter-container .row [class*="col-"] {
-        padding: 25px 15px;
+        padding: 15px;
         margin: 0; } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .filter-container .row .blog-item-container {
+      min-height: 430px; } }
+  @media (max-width: 767px) and (orientation: portrait) {
+    .filter-container .row .blog-item-container {
+      min-height: 481px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .filter-container .row {
       margin-left: -15px;

@@ -158,8 +158,16 @@
                 padding: 15px;
             }
             @include media-xs {
-                padding: 25px 15px;
+                padding: 15px;
                 margin: 0;            
+            }
+        }
+        .blog-item-container {
+            @include media-xs-landscape {
+                min-height: 430px;
+            }
+            @include media-xs-portrait {
+                min-height: 481px;
             }
         }
         @include media-sm {
