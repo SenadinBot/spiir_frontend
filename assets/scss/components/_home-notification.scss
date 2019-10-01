@@ -9,7 +9,7 @@
     }
     hr {
         border-color: rgba(255, 255, 255, 0.3);
-        margin: 13px 0 60px 0;
+        margin: 50px 0 60px 0;
     }
     p {
         color: #C2E8D5;
@@ -114,7 +114,6 @@
     }
 }
 .msg-animation-container {
-    opacity: 0;
     @include media-xs {
         position: relative;
         height: 500px;
@@ -124,12 +123,13 @@
     .msg-animation {
         position: absolute;
         &.msg-one {
-            top: 6px;
+            top: 0;
             right: 55px;
         }
         &.msg-two {
-            top: 101px;
+            top: 100px;
             left: 0;
+            z-index: 9;
             @include media-sm {
                 top: 115px;
             }
@@ -138,7 +138,7 @@
             }
         }
         &.msg-three {
-            bottom: 146px;
+            bottom: 90px;
             right: 30px;
             @include media-sm {
                 bottom: 160px;
@@ -148,11 +148,15 @@
             }
         }
         &.msg-four {
-            bottom: 49px;
+            bottom: -2px;
             left: 40px;
             @include media-sm {
                 bottom: 55px;
             }
+        }
+        img {
+            max-width: 97%;
+            max-height: 97%;
         }
     }
 }

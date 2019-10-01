@@ -164,7 +164,6 @@
                     -moz-transition: all 0.3s ease;
                     -o-transition: all 0.3s ease;
                     transition: all 0.3s ease;
-                    opacity: 0.6;
                 }
                 &.fcb-icon {
                     img {
@@ -186,7 +185,7 @@
                 }
                 &:hover {
                     img {
-                        opacity: 1;
+                        opacity: 0.8;                        
                     }
                 }
             }
@@ -211,7 +210,7 @@
             font-size: 14px;
             line-height: 16px;
             display: inline-block;
-            width: 28%;
+            width: 41%;
             color: #979797;
             vertical-align: middle;
             position: relative;
@@ -224,7 +223,7 @@
     .blog-social {
         position: absolute;
         right: 0;
-        top: 32px;
+        top: 37px;
         @include media-xs {
             top: 50%;
             transform: translateY(-50%);
@@ -238,20 +237,20 @@
                 a {
                     &.fcb-icon {
                         img {
-                            width: 22.65px;
-                            height: 22.5px;
+                            width: 30.2px;
+                            height: 30px;
                         }
                     }
                     &.insta-icon {
                         img {
-                            width: 24px;
-                            height: 24px;
+                            width: 32px;
+                            height: 32px;
                         }
                     }
                     &.twitter-icon {
                         img {
-                            width: 18.92px;
-                            height: 15.44px;
+                            width: 25.23px;
+                            height: 20.59px;
                         }
                     }
                 }

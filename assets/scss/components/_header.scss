@@ -340,10 +340,12 @@ header {
                         @include media-xs {
                             outline: 0;
                             background-color: rgba(0, 0, 0, 0.2);
+                            border-radius: 8px;
                         }
                         @include media-sm {
                             outline: 0;
                             background-color: rgba(0, 0, 0, 0.2);
+                            border-radius: 8px;
                         }
                     }
                 }
@@ -362,24 +364,22 @@ header {
                     @include media-xs {
                         padding: 16px;
                         color: $white;
-                        font-size: 26px;
-                        line-height: 26px;
+                        font-size: 28px;
+                        line-height: 28px;
                         letter-spacing: 2px;
                         display: block;
                         text-align: center;
                         font-family: $camptonLight;
-                        text-transform: uppercase;
                     }
                     @include media-sm {
                         padding: 16px;
                         color: $white;
-                        font-size: 26px;
-                        line-height: 26px;
+                        font-size: 28px;
+                        line-height: 28px;
                         letter-spacing: 2px;
                         display: block;
                         text-align: center;
                         font-family: $camptonLight;
-                        text-transform: uppercase;
                     }
                     &:hover {
                         color: $white;

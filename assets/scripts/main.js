@@ -5,30 +5,9 @@ $(document).ready(function () {
         $('body').toggleClass('menu-open');
     });
 
-    // Start Animation On Scroll
-    if ($('.msg-animation-container').length) {
-        const $obj = $('.msg-animation-container');
-        if ($obj.length) {
-            const { top } = $obj.offset();
-        }
-        $(window).scroll(function () {
-            const position = $(this).scrollTop() + 115;
-            if (position >= $('.msg-animation-container').offset().top - 250) {
-                $('.msg-animation').addClass('animate fadeInDown');
-                $('.msg-animation-container').animate({ 'opacity': '1' }, 1000);
-            }
-        });
-        $(window).on('load', function () {
-            const position = $(this).scrollTop() + 115;
-            if (position >= $('.msg-animation-container').offset().top - 250) {
-                $('.msg-animation').addClass('animate fadeInDown');
-                $('.msg-animation-container').animate({ 'opacity': '1' }, 1000);
-            }
-        });
-    }
     // Cases animation
     AOS.init({
-        duration: 700
+        duration: 1000
     });
 
     /* init Jarallax */
@@ -174,7 +153,8 @@ $(document).ready(function () {
     // Custom Category Filter
     if (!(/Trident\/|MSIE/.test(window.navigator.userAgent)) && $('.filter').length) {
         var filterSingle = $('.filter').filterizr({
-            setupControls: false
+            setupControls: false,
+            animationDuration: 0.3
         });
         $('.filter-nav li').click(function () {
             $('.filter-nav li').removeClass('active');

@@ -193,10 +193,10 @@ footer {
                     font-family: $camptonLight;
                     font-size: 14px;
                     line-height: 24px;
-                    @include media-xs {
-                        font-size: 18px; 
-                        line-height: 24px;
-                    }
+                    // @include media-xs {
+                    //     font-size: 18px; 
+                    //     line-height: 24px;
+                    // }
                     &:after {
                         content: "";
                         position: absolute;

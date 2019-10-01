@@ -224,7 +224,7 @@
                 height: 40px;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-image: url("/assets/images/icons/slider-icon.svg");
+                background-image: url("/assets/images/icons/next-icon.svg");
                 -webkit-transition: all 0.3s ease;
                 -moz-transition: all 0.3s ease;
                 -o-transition: all 0.3s ease;
@@ -245,6 +245,9 @@
             left: 76px;
             @include media-xs {
                 left: 20px;
+            }
+            &:after {
+                background-image: url("/assets/images/icons/prev-icon.svg");
             }
         }
         .slick-next {
