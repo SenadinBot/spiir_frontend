@@ -24,6 +24,7 @@ $(document).ready(function () {
         dots: false,
         autoplay: false,
         autoplaySpeed: 3000,
+        speed: 0,
         arrows: true,
         centerMode: true,
         responsive: [
