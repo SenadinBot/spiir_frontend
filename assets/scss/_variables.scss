@@ -100,3 +100,11 @@ $camptonSemiBoldItalic: "Campton Semi Bold Italic";
         }
     }
 }
+.col-12 {
+    @include media-xs() {
+        padding: 0 25px;
+    }
+    @include media-sm() {
+        padding: 0 25px;
+    }
+}

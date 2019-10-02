@@ -187,10 +187,13 @@ header {
         transition: all 0.5s;
         @include media-xs {
             top: 16px;
+            left: 25px;
             z-index: 9;
         }
         @include media-sm {
             z-index: 9;
+            left: 25px;
+            top: 15px;
         }
         a {
             -webkit-transition: all 0.5s;

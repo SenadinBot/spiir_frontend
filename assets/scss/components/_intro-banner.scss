@@ -3,9 +3,15 @@
     background: linear-gradient(#0b9b52 0%, #12aa5d 100%);
     height: 520px;
     overflow: hidden;
+    @include media-sm {
+        height: 420px;
+    }
     &.small-banner {
         height: 320px;
         background: #12aa5d;
+        @include media-sm {
+            height: 320px;
+        }
         .banner-content {
             top: 70px;
             @include media-xs {
@@ -17,6 +23,12 @@
         position: absolute;
         top: 129px;
         left: 15px;
+        @include media-xs {
+            left: 25px;
+        }
+        @include media-sm {
+            left: 25px;
+        }
         h2 {
             color: $white;
             margin-bottom: 10px;
@@ -54,48 +66,59 @@
         }
     }
     &.city-banner {
+        .img-container {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            left: initial;
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
         .bg-image {
             position: absolute;
-            right: -70px;
-            bottom: -27px;
-            @include media-md {
-                bottom: -18px;
-            }
-            @include media-sm {
-                bottom: -14px;
-            }
-            @include media-xs {
-                right: -30px;
-                bottom: -8px;
-            }
-            @include media-xs-landscape {
-                bottom: -14px;
-            }
+            right: 0;
+            bottom: 0;
         }
         .person-image {
             position: absolute;
-            bottom: -27px;
-            right: -75px; 
-            @include media-md {
-                bottom: -18px;
-            } 
-            @include media-sm {
-                bottom: -14px;
-            }  
-            @include media-xs {
-                right: -30px;
-                bottom: -8px;
+            bottom: 0;
+            right: 22%;
+            img {
+                @include media-md {
+                    height: 160px
+                }
+                @include media-sm {
+                    height: 120px
+                }
             }
-            @include media-xs-landscape {
-                bottom: -14px;
-            }
+        }
+    }
+    &.company-banner {
+        .img-container {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            left: initial;
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+        .bg-image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
     }
     &.park-banner {
         .bg-image {
             position: absolute;
             right: -95px;
-            bottom: -363px;
+            bottom: -1px;
             @include media-xs {
                 bottom: -90px;
                 width: 60%;
@@ -105,14 +128,13 @@
                 width: 50%;
             }
             @include media-sm {
-                bottom: -140px;
-                width: 47%;
+                width: 87%;
             }
         }
         .person-image {
             position: absolute;
             bottom: 0;
-            right: 605px;
+            right: 35%;
             @include media-xs {
                 right: 180px;
             }  
@@ -129,33 +151,14 @@
                 @include media-sm {
                     height: 140px
                 }
+                @include media-md {
+                    height: 240px
+                }
             }  
         }
         .banner-content {
             p {
                 width: 100%;
-            }
-        }
-        .park-cart {
-            position: absolute;
-            bottom: 0;
-            right: 180px;
-            @include media-xs {
-                right: 30px;
-            }
-            @include media-sm {
-                right: 30px;
-            }
-            @include media-md {
-                right: 30px;
-            }
-            img {
-                @include media-xs {
-                    width: 80px
-                }
-                @include media-sm {
-                    width: 100px
-                }
             }
         }
         .park-flower {
@@ -186,7 +189,10 @@
         .person-image {
             position: absolute;
             bottom: -44px;
-            right: 480px; 
+            right: 33.3%; 
+            @media (min-width: 1200px) and (max-width: 1400px) {
+                right: 30%; 
+            }
             @include media-md {
                 right: 165px;
             }  
@@ -230,12 +236,14 @@
             position: absolute;
             top: 185px;
             right: 275px;
+            @media (min-width: 1200px) and (max-width: 1400px) {
+                right: 15%; 
+            }
             @include media-md {
                 right: 0;
             }
             @include media-sm {
-                right: 20px;
-                width: 200px;
+                display: none;                
             }
             @include media-xs {
                 right: 18px;
@@ -248,13 +256,14 @@
             position: absolute;
             top: 78px;
             right: 268px;
+            @media (min-width: 1200px) and (max-width: 1400px) {
+                right: 15%; 
+            }
             @include media-md {
                 right: 0;
             }
             @include media-sm {
-                right: 15px;
-                width: 212px;
-                top: 95px;
+                display: none;
             }
             @include media-xs {
                 right: 15px;
@@ -268,6 +277,9 @@
             @include media-xs {
                 top: 72px;
                 width: 95%;
+            }
+            @include media-sm {
+                top: 75px;
             }
             h2 {
                 font-size: 48px;

@@ -79,6 +79,9 @@
         h4 {
             margin-bottom: 20px;
             min-height: 58px;
+            @include media-sm {
+                min-height: 87px;
+            }
         }
         p {
             font-family: $camptonLight;

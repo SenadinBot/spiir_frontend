@@ -6,7 +6,7 @@
         padding: 50px 0 100px 0;        
     }
     @include media-xs {
-        padding: 50px 0 100px 0;        
+        padding: 50px 0 70px 0;        
     }
     @include media-xs-landscape {
         padding: 50px 0 160px 0;        
@@ -25,11 +25,7 @@
         @include media-xs {
             overflow: hidden;
         }
-        @include media-sm {
-            overflow: hidden;
-        }
         .jarallax-img {
-            object-position: right !important;
             @media all and (-ms-high-contrast:none) {
                 object-position: 50% 50% !important;
                 background-position-x: right !important;
@@ -43,10 +39,10 @@
                 display: none;
             }
             @include media-sm {
-                display: none;
+                object-position: 40% 50% !important;
             }
             @include media-md {
-                object-position: 50% 50% !important;
+                object-position: 40% 50% !important;
             }
         }
         .mobile-jarallax-img {
@@ -57,9 +53,6 @@
             max-width: 100%;
             max-height: 100%;
             @include media-xs {
-                display: block;
-            }
-            @include media-sm {
                 display: block;
             }
         }
@@ -141,6 +134,9 @@
 }
 .content-img-container {
     margin-top: 38px;
+    @include media-xs {
+        text-align: center;
+    }
     img {
         max-width: 100%;
         max-height: 100%;
@@ -231,6 +227,9 @@
         ul {
             li {
                 margin-right: 20px;
+                @include media-xs-portrait {
+                    margin-right: 5px;
+                }
                 &:last-child {
                     margin-right: 0;
                 }

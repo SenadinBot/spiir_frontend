@@ -64,6 +64,15 @@
             }
         }
     }
+    [class*="col-"] {
+        &:last-child {
+            .notification-item {
+                @include media-xs {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
 }
 .notification-item {
     h3 {
@@ -116,7 +125,7 @@
 .msg-animation-container {
     @include media-xs {
         position: relative;
-        height: 500px;
+        height: 460px;
         max-width: 345px;
         margin: 0 auto;
     }
@@ -130,28 +139,28 @@
             top: 100px;
             left: 0;
             z-index: 9;
-            @include media-sm {
-                top: 115px;
-            }
             @include media-xs {
-                top: 115px;
+                bottom: 90px;
             }
         }
         &.msg-three {
             bottom: 90px;
             right: 30px;
             @include media-sm {
-                bottom: 160px;
+                bottom: 130px;
             }
             @include media-xs {
-                bottom: 150px;
+                bottom: 135px;
             }
         }
         &.msg-four {
             bottom: -2px;
             left: 40px;
             @include media-sm {
-                bottom: 55px;
+                bottom: 30px;
+            }
+            @include media-xs {
+                bottom: 50px;
             }
         }
         img {

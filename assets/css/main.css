@@ -31,6 +31,13 @@
   .container.img-container {
     max-width: 1440px; } }
 
+@media (max-width: 767px) {
+  .col-12 {
+    padding: 0 25px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-12 {
+    padding: 0 25px; } }
+
 main {
   margin-top: 80px; }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -457,10 +464,13 @@ header {
     @media (max-width: 767px) {
       header .logo-container {
         top: 16px;
+        left: 25px;
         z-index: 9; } }
     @media (min-width: 768px) and (max-width: 991px) {
       header .logo-container {
-        z-index: 9; } }
+        z-index: 9;
+        left: 25px;
+        top: 15px; } }
     header .logo-container a {
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
@@ -965,7 +975,7 @@ footer {
       padding: 50px 0 100px 0; } }
   @media (max-width: 767px) {
     .jarallax-container {
-      padding: 50px 0 100px 0; } }
+      padding: 50px 0 70px 0; } }
   @media (max-width: 767px) and (orientation: landscape) {
     .jarallax-container {
       padding: 50px 0 160px 0; } }
@@ -983,29 +993,24 @@ footer {
     @media (max-width: 767px) {
       .jarallax-container .jarallax {
         overflow: hidden; } }
+    @media all and (-ms-high-contrast: none) {
+      .jarallax-container .jarallax .jarallax-img {
+        object-position: 50% 50% !important;
+        background-position-x: right !important;
+        right: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        width: 100% !important; } }
+    @media (max-width: 767px) {
+      .jarallax-container .jarallax .jarallax-img {
+        display: none; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .jarallax-container .jarallax {
-        overflow: hidden; } }
-    .jarallax-container .jarallax .jarallax-img {
-      object-position: right !important; }
-      @media all and (-ms-high-contrast: none) {
-        .jarallax-container .jarallax .jarallax-img {
-          object-position: 50% 50% !important;
-          background-position-x: right !important;
-          right: 0;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: 100% 50%;
-          width: 100% !important; } }
-      @media (max-width: 767px) {
-        .jarallax-container .jarallax .jarallax-img {
-          display: none; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .jarallax-container .jarallax .jarallax-img {
-          display: none; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .jarallax-container .jarallax .jarallax-img {
-          object-position: 50% 50% !important; } }
+      .jarallax-container .jarallax .jarallax-img {
+        object-position: 40% 50% !important; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .jarallax-container .jarallax .jarallax-img {
+        object-position: 40% 50% !important; } }
     .jarallax-container .jarallax .mobile-jarallax-img {
       display: none;
       position: absolute;
@@ -1014,9 +1019,6 @@ footer {
       max-width: 100%;
       max-height: 100%; }
       @media (max-width: 767px) {
-        .jarallax-container .jarallax .mobile-jarallax-img {
-          display: block; } }
-      @media (min-width: 768px) and (max-width: 991px) {
         .jarallax-container .jarallax .mobile-jarallax-img {
           display: block; } }
   @media (max-width: 767px) {
@@ -1077,6 +1079,9 @@ footer {
 
 .content-img-container {
   margin-top: 38px; }
+  @media (max-width: 767px) {
+    .content-img-container {
+      text-align: center; } }
   .content-img-container img {
     max-width: 100%;
     max-height: 100%;
@@ -1142,6 +1147,9 @@ footer {
         transform: translateY(-50%); } }
     .small-intro-container .blog-social ul li {
       margin-right: 20px; }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .small-intro-container .blog-social ul li {
+          margin-right: 5px; } }
       .small-intro-container .blog-social ul li:last-child {
         margin-right: 0; }
       .small-intro-container .blog-social ul li a.fcb-icon img {
@@ -1628,6 +1636,9 @@ footer {
   @media (max-width: 767px) {
     .home-notifications-container .container .row [class*="col-"]:nth-child(5) {
       order: 5; } }
+  @media (max-width: 767px) {
+    .home-notifications-container [class*="col-"]:last-child .notification-item {
+      margin-top: 50px; } }
 
 .notification-item h3 {
   color: #ffffff; }
@@ -1674,7 +1685,7 @@ footer {
 @media (max-width: 767px) {
   .msg-animation-container {
     position: relative;
-    height: 500px;
+    height: 460px;
     max-width: 345px;
     margin: 0 auto; } }
 .msg-animation-container .msg-animation {
@@ -1686,27 +1697,27 @@ footer {
     top: 100px;
     left: 0;
     z-index: 9; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .msg-animation-container .msg-animation.msg-two {
-        top: 115px; } }
     @media (max-width: 767px) {
       .msg-animation-container .msg-animation.msg-two {
-        top: 115px; } }
+        bottom: 90px; } }
   .msg-animation-container .msg-animation.msg-three {
     bottom: 90px;
     right: 30px; }
     @media (min-width: 768px) and (max-width: 991px) {
       .msg-animation-container .msg-animation.msg-three {
-        bottom: 160px; } }
+        bottom: 130px; } }
     @media (max-width: 767px) {
       .msg-animation-container .msg-animation.msg-three {
-        bottom: 150px; } }
+        bottom: 135px; } }
   .msg-animation-container .msg-animation.msg-four {
     bottom: -2px;
     left: 40px; }
     @media (min-width: 768px) and (max-width: 991px) {
       .msg-animation-container .msg-animation.msg-four {
-        bottom: 55px; } }
+        bottom: 30px; } }
+    @media (max-width: 767px) {
+      .msg-animation-container .msg-animation.msg-four {
+        bottom: 50px; } }
   .msg-animation-container .msg-animation img {
     max-width: 97%;
     max-height: 97%; }
@@ -1868,7 +1879,7 @@ footer {
       min-height: 430px; } }
   @media (max-width: 767px) and (orientation: portrait) {
     .filter-container .row .blog-item-container {
-      min-height: 481px; } }
+      min-height: 495px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .filter-container .row {
       margin-left: -15px;
@@ -2112,6 +2123,9 @@ footer {
     .blog-item-container .filtr-item-content h4 {
       margin-bottom: 20px;
       min-height: 58px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .blog-item-container .filtr-item-content h4 {
+          min-height: 87px; } }
     .blog-item-container .filtr-item-content p {
       font-family: "Campton Light"; }
     .blog-item-container .filtr-item-content:after, .blog-item-container .filtr-item-content:before {
@@ -2520,9 +2534,15 @@ footer {
   background: linear-gradient(#0b9b52 0%, #12aa5d 100%);
   height: 520px;
   overflow: hidden; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .big-banner-container {
+      height: 420px; } }
   .big-banner-container.small-banner {
     height: 320px;
     background: #12aa5d; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .big-banner-container.small-banner {
+        height: 320px; } }
     .big-banner-container.small-banner .banner-content {
       top: 70px; }
       @media (max-width: 767px) {
@@ -2532,6 +2552,12 @@ footer {
     position: absolute;
     top: 129px;
     left: 15px; }
+    @media (max-width: 767px) {
+      .big-banner-container .banner-content {
+        left: 25px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .big-banner-container .banner-content {
+        left: 25px; } }
     .big-banner-container .banner-content h2 {
       color: #ffffff;
       margin-bottom: 10px; }
@@ -2565,44 +2591,48 @@ footer {
           -ms-line-clamp: 3;
           line-clamp: 3;
           display: -webkit-box; } }
+  .big-banner-container.city-banner .img-container {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    left: initial;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none; }
   .big-banner-container.city-banner .bg-image {
     position: absolute;
-    right: -70px;
-    bottom: -27px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .big-banner-container.city-banner .bg-image {
-        bottom: -18px; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .big-banner-container.city-banner .bg-image {
-        bottom: -14px; } }
-    @media (max-width: 767px) {
-      .big-banner-container.city-banner .bg-image {
-        right: -30px;
-        bottom: -8px; } }
-    @media (max-width: 767px) and (orientation: landscape) {
-      .big-banner-container.city-banner .bg-image {
-        bottom: -14px; } }
+    right: 0;
+    bottom: 0; }
   .big-banner-container.city-banner .person-image {
     position: absolute;
-    bottom: -27px;
-    right: -75px; }
+    bottom: 0;
+    right: 22%; }
     @media (min-width: 992px) and (max-width: 1199px) {
-      .big-banner-container.city-banner .person-image {
-        bottom: -18px; } }
+      .big-banner-container.city-banner .person-image img {
+        height: 160px; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .big-banner-container.city-banner .person-image {
-        bottom: -14px; } }
-    @media (max-width: 767px) {
-      .big-banner-container.city-banner .person-image {
-        right: -30px;
-        bottom: -8px; } }
-    @media (max-width: 767px) and (orientation: landscape) {
-      .big-banner-container.city-banner .person-image {
-        bottom: -14px; } }
+      .big-banner-container.city-banner .person-image img {
+        height: 120px; } }
+  .big-banner-container.company-banner .img-container {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    left: initial;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none; }
+  .big-banner-container.company-banner .bg-image {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
   .big-banner-container.park-banner .bg-image {
     position: absolute;
     right: -95px;
-    bottom: -363px; }
+    bottom: -1px; }
     @media (max-width: 767px) {
       .big-banner-container.park-banner .bg-image {
         bottom: -90px;
@@ -2613,12 +2643,11 @@ footer {
         width: 50%; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .big-banner-container.park-banner .bg-image {
-        bottom: -140px;
-        width: 47%; } }
+        width: 87%; } }
   .big-banner-container.park-banner .person-image {
     position: absolute;
     bottom: 0;
-    right: 605px; }
+    right: 35%; }
     @media (max-width: 767px) {
       .big-banner-container.park-banner .person-image {
         right: 180px; } }
@@ -2634,27 +2663,11 @@ footer {
     @media (min-width: 768px) and (max-width: 991px) {
       .big-banner-container.park-banner .person-image img {
         height: 140px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .big-banner-container.park-banner .person-image img {
+        height: 240px; } }
   .big-banner-container.park-banner .banner-content p {
     width: 100%; }
-  .big-banner-container.park-banner .park-cart {
-    position: absolute;
-    bottom: 0;
-    right: 180px; }
-    @media (max-width: 767px) {
-      .big-banner-container.park-banner .park-cart {
-        right: 30px; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .big-banner-container.park-banner .park-cart {
-        right: 30px; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .big-banner-container.park-banner .park-cart {
-        right: 30px; } }
-    @media (max-width: 767px) {
-      .big-banner-container.park-banner .park-cart img {
-        width: 80px; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .big-banner-container.park-banner .park-cart img {
-        width: 100px; } }
   .big-banner-container.park-banner .park-flower {
     position: absolute;
     bottom: -20px;
@@ -2679,7 +2692,10 @@ footer {
   .big-banner-container.big-park-banner .person-image {
     position: absolute;
     bottom: -44px;
-    right: 480px; }
+    right: 33.3%; }
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      .big-banner-container.big-park-banner .person-image {
+        right: 30%; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .big-banner-container.big-park-banner .person-image {
         right: 165px; } }
@@ -2716,13 +2732,15 @@ footer {
     position: absolute;
     top: 185px;
     right: 275px; }
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      .big-banner-container.big-park-banner .small-msg {
+        right: 15%; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .big-banner-container.big-park-banner .small-msg {
         right: 0; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .big-banner-container.big-park-banner .small-msg {
-        right: 20px;
-        width: 200px; } }
+        display: none; } }
     @media (max-width: 767px) {
       .big-banner-container.big-park-banner .small-msg {
         right: 18px;
@@ -2733,14 +2751,15 @@ footer {
     position: absolute;
     top: 78px;
     right: 268px; }
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      .big-banner-container.big-park-banner .big-msg {
+        right: 15%; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .big-banner-container.big-park-banner .big-msg {
         right: 0; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .big-banner-container.big-park-banner .big-msg {
-        right: 15px;
-        width: 212px;
-        top: 95px; } }
+        display: none; } }
     @media (max-width: 767px) {
       .big-banner-container.big-park-banner .big-msg {
         right: 15px;
@@ -2753,6 +2772,9 @@ footer {
       .big-banner-container.big-park-banner .banner-content {
         top: 72px;
         width: 95%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .big-banner-container.big-park-banner .banner-content {
+        top: 75px; } }
     .big-banner-container.big-park-banner .banner-content h2 {
       font-size: 48px;
       line-height: 48px; }
