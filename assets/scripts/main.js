@@ -164,4 +164,25 @@ $(document).ready(function () {
         });
     }
 
+    // Responsive Bootstrap Tabs to Accordion
+    $('a[href*="#"]').on('click', function (event) {
+        var target = $(this);
+        target = target.length ? target : $('[name=' + this.slice(1) + ']');
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top - 90
+            }, 1000, function () {
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) {
+                    return false;
+                } else {
+                    $target.attr('tabindex', '-1');
+                    $target.focus();
+                };
+            });
+        }
+    });
+
 });

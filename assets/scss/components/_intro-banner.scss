@@ -318,6 +318,13 @@
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
     }
+    &.terms-banner {
+        height: 250px;
+        background: #12AA5D;
+        .banner-content {
+            top: 70px;
+        }
+    }
 }
 .animate {
     -webkit-animation-duration: 1s;
